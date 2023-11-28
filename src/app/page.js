@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Lottie
 import Lottie from "lottie-react";
@@ -46,6 +46,9 @@ export default function Home() {
   let [currentSong, setCurrentSong] = useState(0);
 
   let [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    lottieRef.current.playSegments([194, 204]);
+  }, []);
   return (
     <main>
       <div className=" w-full h-[115vh] sm:h-[125vh] flex justify-center items-center relative">
@@ -134,7 +137,9 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             display: "block",
             height: smUp ? "25vh" : "65vh",
             width: smUp ? "33vh" : "21vh",
-            transform: smUp?"translateX(-30vh)translateY(-35vh)":"translateX(-12vh)translateY(-11vh)",
+            transform: smUp
+              ? "translateX(-30vh)translateY(-35vh)"
+              : "translateX(-12vh)translateY(-11vh)",
             position: "absolute",
             bottom: smUp ? "-84.4vh" : "-67.1vh",
             // left: 0,
