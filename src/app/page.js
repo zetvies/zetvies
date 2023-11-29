@@ -104,8 +104,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-[15vh]"></div>
-      <div className=" snap-always snap-start w-full h-[100vh] flex flex-col justify-end">
+      <div
+        className={` ${isLoaded ? "flex" : "hidden"}  w-full h-[15vh]`}
+      ></div>
+      <div
+        className={` ${
+          isLoaded ? "flex" : "hidden"
+        } snap-always snap-start w-full h-[100vh] flex-col justify-end`}
+      >
         <div className="flex flex-1 relative">
           <Image
             src={Tower}
