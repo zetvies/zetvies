@@ -1,16 +1,15 @@
-import './globals.css'
+import Head from "next/head";
+import "./globals.css";
 
 export const metadata = {
-  title: 'Zetvies',
-  description: 'by Bimo Arsa',
-}
+  title: "Zetvies",
+  description: "by Bimo Arsa",
+};
 
 export default function RootLayout({ children }) {
-
-  
   return (
     <html lang="en">
-      <body >{children}</body>
+      <body>{children}</body>
     </html>
-  )
+  );
 }

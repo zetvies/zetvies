@@ -154,7 +154,6 @@ $rhap_font-family: "Raleway", sans-serif;
   display: none;
 }
 
-
 .rhap_repeat-button {
   font-size: 26px;
   width: 26px;
@@ -203,6 +202,13 @@ $rhap_font-family: "Raleway", sans-serif;
   }
   .rhap_main-controls {
     justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .rhap_main-controls {
+    transform: scale(0.8);
+    transform-origin: center left;
   }
 }
 
