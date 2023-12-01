@@ -196,7 +196,7 @@ export default function Home() {
       } overflow-x-hidden bg-[#bfd6e8]`}
     >
       <div className=" snap-always snap-start w-full h-[100vh] flex justify-center items-center relative">
-        <div className="mt-[95vh] flex flex-col items-center">
+        <div className="mt-[40vh] sm:mt-[50vh] flex flex-col items-center">
           <Lottie
             animationData={LoadingAnimation}
             lottieRef={lottieRef}
@@ -209,23 +209,7 @@ export default function Home() {
               lottieRef.current.playSegments([194, 204]);
             }}
           />
-          <div
-            style={{
-              height: "40vh",
-              // maxWidth: smUp ? "34.4vh" : "27.6vh",
-              width: smUp ? "34.4vh" : "27.6vh",
-              // position: "absolute",
-              transform: smUp
-                ? "translateY(-33vh)translateX(-.5px)"
-                : "translateY(-24vh)translateX(-.5px)",
-              left: 0,
-              right: 0,
-              marginLeft: "auto",
-              marginRight: "auto",
-            }}
-          >
-            {/* <Image src={Tower} style={{ width: "auto" }} /> */}
-          </div>
+          
         </div>
       </div>
 
@@ -245,7 +229,7 @@ export default function Home() {
               // maxWidth: smUp ? "34.4vh" : "27.6vh",
               width: smUp ? "34.4vh" : "27.6vh",
               // position: "absolute",
-              transform: "translateY(-21vh)translateX(0px)",
+              transform: "translateY(-15vh)translateX(0px)",
               left: 0,
               right: 0,
               marginLeft: "auto",
@@ -284,7 +268,7 @@ export default function Home() {
                 ? "translateX(-20vh)translateY(-32vh)"
                 : mdUp
                 ? "translateX(-30vh)translateY(-32vh)"
-                : "translateX(-12vh)translateY(-6vh)",
+                : "translateX(-12vh)translateY(-1vh)",
               position: "absolute",
               bottom: 0,
               left: 0,
@@ -301,7 +285,7 @@ export default function Home() {
               width: "100%",
               // transform: "translateX(-2px)",
               position: "absolute",
-              bottom: smUp ? "59.8vh" : "56.8vh",
+              bottom: smUp ? "59.8vh" : "49.8vh",
               left: 0,
               right: 0,
               marginLeft: "auto",
@@ -323,7 +307,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             preserveAspectRatio="none"
             style={{
               display: "block",
-              height: smUp ? "60vh" : "57vh",
+              height: smUp ? "60vh" : "50vh",
               width: smUp ? "223vh" : "170vh",
               position: "absolute",
               bottom: 0,
