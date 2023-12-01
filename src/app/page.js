@@ -23,13 +23,18 @@ import Turtle from "@/assets/images/Turtle.svg";
 
 //Profile
 import Arsa from "@/assets/images/Arsa.jpg";
+import { TypeAnimation } from "react-type-animation";
+
+import { NextReactP5Wrapper } from "@p5-wrapper/next";
+import Parser from "html-react-parser";
 
 export default function Home() {
-  const smUp = useMedia("(min-width: 640px)");
-  const smMd = useMedia("(min-width: 640px) and (max-width:850px)");
-  const mdUp = useMedia("(min-width: 850px)");
+  const smUp = useMedia("(min-width: 640px)", false);
+  const smMd = useMedia("(min-width: 640px) and (max-width:1050px)", false);
+  const mdUp = useMedia("(min-width: 1050px)", false);
   const lottieRef = useRef();
   const mainRef = useRef();
+  const profileRef = useRef();
 
   let songs = [
     {
@@ -65,10 +70,130 @@ export default function Home() {
       }
     });
   }, []);
+
+  const sketch = (p5) => {
+    let xoff1 = 0;
+    let xoff2 = 10000;
+    let xoff3 = 43000;
+    let xoff4 = 220000;
+    let xoff5 = 900000;
+    let xoff6 = 100000;
+    let xoff7 = 913000;
+    let xoff8 = 230000;
+    let xoff9 = 300000;
+    let xoff10 = 600000;
+    let instagram = p5.createA("https://instagram.com/zetvies", "", "_blank");
+    let email = p5.createA(
+      "mailto:zetvies@gmail.com?subject=Hi%20Arsa!",
+      "",
+      "_blank"
+    );
+    let whatsapp = p5.createA(
+      "https://wa.me/6282114461449?text=Hi+Arsa!",
+      "",
+      "_blank"
+    );
+    let medium = p5.createA("https://medium.com/@zetvies", "", "_blank");
+    let linkedin = p5.createA("https://linkedin.com/in/zetvies", "", "_blank");
+
+    p5.setup = () => {
+      p5.createCanvas(window.innerWidth, window.innerHeight);
+
+      // whatsapp.position(p5.width / 2, p5.height / 2);
+
+      {
+        mdUp
+          ? instagram.html(
+              `<button style="background-color:black;color:white;height:16vh;width:16vh;transform:translate(-8vh,-8vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:13vh;"/></button>`
+            )
+          : instagram.html(
+              `<button style="background-color:black;color:white;height:12vh;width:12vh;transform:translate(-6vh,-6vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:10vh;"/></button>`
+            );
+      }
+      instagram.style("z-index:10");
+
+      {
+        mdUp
+          ? medium.html(
+              `<button style="overflow:hidden; background-color:black;color:white;height:9vh;width:9vh;transform:translate(-4.5vh,-4.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:7vh;"/></button>`
+            )
+          : medium.html(
+              `<button style="overflow:hidden; background-color:black;color:white;height:7vh;width:7vh;transform:translate(-3.5vh,-3.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:5vh;"/></button>`
+            );
+      }
+      medium.style("z-index:10");
+
+      {
+        mdUp
+          ? linkedin.html(
+              `<button style="overflow:hidden; background-color:black;color:white;height:11vh;width:11vh;transform:translate(-5,5vh,-5,5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:8vh;"/></button>`
+            )
+          : linkedin.html(
+              `<button style="overflow:hidden; background-color:black;color:white;height:9vh;width:9vh;transform:translate(-4vh,-4vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:6vh;"/></button>`
+            );
+      }
+      linkedin.style("z-index:10");
+
+      {
+        mdUp
+          ? email.html(
+              `<button style="background-color:white;border:2px solid black;color:black;height:15vh;width:15vh;transform:translate(-8vh,-8vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:10.5vh;"/></button>`
+            )
+          : email.html(
+              `<button style="background-color:white;border:2px solid black;color:black;height:12vh;width:11vh;transform:translate(-5.5vh,-5.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:7vh;"/></button>`
+            );
+      }
+      email.style("z-index:11");
+
+      {
+        mdUp
+          ? whatsapp.html(
+              `<button style="background-color:white;border:2px solid black;color:black;height:11vh;width:11vh;transform:translate(-5.5vh,-5.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:5.5vh;"/></button>`
+            )
+          : whatsapp.html(
+              `<button style="background-color:white;border:2px solid black;color:black;height:9vh;width:9vh;transform:translate(-4.5vh,-4.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:4.5vh;"/></button>`
+            );
+      }
+      whatsapp.style("z-index:10");
+    };
+
+    p5.draw = () => {
+      let x = p5.map(p5.noise(xoff1), 0, 1, 0, p5.width);
+      let y = p5.map(p5.noise(xoff2), 0, 1, 0, p5.height);
+      let x2 = p5.map(p5.noise(xoff3), 0, 1, 0, p5.width);
+      let y2 = p5.map(p5.noise(xoff4), 0, 1, 0, p5.height);
+      let x3 = p5.map(p5.noise(xoff5), 0, 1, 0, p5.width);
+      let y3 = p5.map(p5.noise(xoff6), 0, 1, 0, p5.height);
+      let x4 = p5.map(p5.noise(xoff7), 0, 1, 0, p5.width);
+      let y4 = p5.map(p5.noise(xoff8), 0, 1, 0, p5.height);
+      let x5 = p5.map(p5.noise(xoff9), 0, 1, 0, p5.width);
+      let y5 = p5.map(p5.noise(xoff10), 0, 1, 0, p5.height);
+
+      xoff1 += 0.003;
+      xoff2 += 0.003;
+      xoff3 += 0.005;
+      xoff4 += 0.005;
+      xoff5 += 0.0075;
+      xoff6 += 0.0075;
+      xoff7 += 0.0075;
+      xoff8 += 0.0075;
+      xoff9 += 0.005;
+      xoff10 += 0.005;
+
+      p5.fill(0);
+      instagram.position(x, y);
+      email.position(x2, y2);
+      whatsapp.position(x3, y3);
+      medium.position(x4, y4);
+      linkedin.position(x5, y5);
+    };
+  };
   return (
     <main
       ref={mainRef}
-      className="snap-y snap-mandatory scroll-smooth h-screen w-screen overflow-scroll overflow-x-hidden bg-[#bfd6e8] "
+      className={`snap-y snap-mandatory scroll-smooth h-screen w-screen ${
+        isLoaded ? "overflow-scroll" : "overflow-hidden"
+      } overflow-x-hidden bg-[#bfd6e8]`}
     >
       <div className=" snap-always snap-start w-full h-[100vh] flex justify-center items-center relative">
         <div className="mt-[95vh] flex flex-col items-center">
@@ -176,7 +301,7 @@ export default function Home() {
               width: "100%",
               // transform: "translateX(-2px)",
               position: "absolute",
-              bottom: smUp ? "59.6vh" : "56.8vh",
+              bottom: smUp ? "59.8vh" : "56.8vh",
               left: 0,
               right: 0,
               marginLeft: "auto",
@@ -203,7 +328,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               position: "absolute",
               bottom: 0,
               left: "50%",
-              transform: "translateX(calc(-50% + 3px))translateY(2px)",
+              transform: "translateX(calc(-50% + .5vh))translateY(2px)",
               marginLeft: "auto",
               marginRight: "auto",
               // zIndex: 1,
@@ -233,7 +358,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             <br />
             with a girl whose tears tasted like moon dust.
           </div>
-          <div className="flex sm:hidden text-[13px] text-center mb-4">
+          <div className="flex sm:hidden text-[2vh] text-center mb-4">
             Once upon a time, there was a
             <br />
             boy who fell in love with a girl
@@ -242,52 +367,49 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           </div>
 
           <div className="flex">
-            <button className="bg-[#00a0a2] hover:bg-[#0095a2] text-[15px] md:text-[18px] text-white py-2 px-6 w-fit rounded mr-2 font-bold">
-              Personal
+            <button className="bg-[#afc150] hover:bg-[#9fb140] text-[15px] md:text-[18px] text-white py-2 px-6 w-fit rounded  mr-2  font-bold">
+              About Me
             </button>
-            <button className="bg-[#afc150] hover:bg-[#9fb140] text-[15px] md:text-[18px] text-white py-2 px-6 w-fit rounded font-bold">
+            <button className="bg-[#00a0a2] hover:bg-[#0095a2] text-[15px] md:text-[18px] text-white py-2 px-6 w-fit rounded font-bold">
               Projects
             </button>
           </div>
         </div>
       </div>
-      {/* <div className=" snap-always snap-start w-full h-screen pb-[40px] flex justify-center items-center overflow-hidden relative bg-[#404041]">
-        <div className="flex items-center">
-          <div
-            style={{
-              height: "350px",
-              width: "300px",
-              position: "relative",
-              marginRight: "4vw",
-              // transform:"translateY(-30px)"
-              // zIndex:-1
-            }}
-          >
-            <Image
-              src={Arsa}
-              fill
-              style={{ objectFit: "cover", objectPosition: "bottom right" }}
-            />
-          </div>
-          <div className="flex flex-col">
-            <div className="text-gray-100  text-[28px]  font-bold ">
-              Bimo Arsa
-            </div>
-            <p className="text-gray-100  text-[22px]  leading-6">
-               is a scientific-artist
-              <br />
-              trying to make the world
-              <br />
-              just a little bit more fun,
-              <br />
-              one project at a time.
-            </p>
-            <button className="bg-[#00a0a2] text-white py-2 px-4 w-fit  mt-4 rounded">
-              Stalk me on <b>Instagram</b>{" "}
-            </button>
-          </div>
+      <div className={` ${isLoaded ? "flex" : "hidden"}  z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-center items-center overflow-hidden relative bg-[#c7d783]`}>
+        <div className=" w-full h-screen flex flex-col justify-center items-center overflow-hidden absolute top-0 left-0">
+          <NextReactP5Wrapper sketch={sketch} />
         </div>
-      </div> */}
+        <div className="flex flex-col items-center justify-center w-screen">
+          <div className="text-gray-800 text-[30px] sm:text-[36px] md:text-[48px] ">
+            <b> Bimo Arsa</b>{" "}
+            <span className="text-[24px] sm:text-[28px] md:text-[36px]">
+              is a
+            </span>
+          </div>
+          <TypeAnimation
+            sequence={[
+              "Product Enthusiast",
+              3000,
+              "Scientific Artist",
+              3000,
+              "Creative Technologist",
+              3000,
+            ]}
+            wrapper="i"
+            speed={50}
+            className="font-serif text-[8vw] sm:text-[48px] md:text-[64px]"
+            style={{
+              display: "inline-block",
+              color: "rgb(31 41 55)",
+              // marginLeft: 6,
+              transform: "translateY(-10px)",
+            }}
+            repeat={Infinity}
+          />
+        </div>
+      </div>
+
       <AudioPlayer
         className={`${
           isLoaded ? "opacity-100 visible" : "opacity-0 invisible"
