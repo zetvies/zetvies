@@ -10,9 +10,9 @@ import LoadingAnimation from "@/assets/lottie/Logo.json";
 // Audio Player
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
 import "./audioplayer.scss";
-import Anindya from "@/assets/songs/Anindya.mp3";
-import Cat from "@/assets/songs/Cat.mp3";
-import Untuk from "@/assets/songs/Untuk.mp3";
+// import Anindya from "@/assets/songs/Anindya.mp3";
+// import Cat from "@/assets/songs/Cat.mp3";
+// import Untuk from "@/assets/songs/Untuk.mp3";
 import Disk from "@/assets/images/Disk.svg";
 import { useMedia } from "react-use";
 
@@ -34,7 +34,22 @@ export default function Home() {
   const mdUp = useMedia("(min-width: 1050px)", false);
   const lottieRef = useRef();
   const mainRef = useRef();
-  const profileRef = useRef();
+
+  let [Anindya, setAnindya] = useState();
+  let [Cat, setCat] = useState();
+  let [Untuk, setUntuk] = useState();
+
+  useEffect(() => {
+    async function importFile() {
+      const anindya = await import(`@/assets/songs/Anindya.mp3`);
+      const cat = await import(`@/assets/songs/Cat.mp3`);
+      const untuk = await import(`@/assets/songs/Untuk.mp3`);
+      setAnindya(anindya.default);
+      setCat(cat.default);
+      setUntuk(untuk.default);
+    }
+    importFile();
+  }, []);
 
   let songs = [
     {
@@ -56,7 +71,6 @@ export default function Home() {
   let [currentSong, setCurrentSong] = useState(0);
 
   let [isLoaded, setIsLoaded] = useState(false);
-  let [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
     mainRef.current.addEventListener("wheel", function (event) {
@@ -209,7 +223,6 @@ export default function Home() {
               lottieRef.current.playSegments([194, 204]);
             }}
           />
-          
         </div>
       </div>
 
@@ -223,6 +236,7 @@ export default function Home() {
       >
         <div className="flex flex-1 relative">
           <Image
+            alt="tower"
             src={Tower}
             style={{
               height: smUp ? "42.9vh" : "34.2vh",
@@ -238,6 +252,7 @@ export default function Home() {
             }}
           />
           <Image
+            alt="rabbit"
             src={Rabbit}
             style={{
               display: "block",
@@ -259,6 +274,7 @@ export default function Home() {
             }}
           />
           <Image
+            alt="turtle"
             src={Turtle}
             style={{
               display: "block",
@@ -360,7 +376,11 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           </div>
         </div>
       </div>
-      <div className={` ${isLoaded ? "flex" : "hidden"}  z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-center items-center overflow-hidden relative bg-[#c7d783]`}>
+      <div
+        className={` ${
+          isLoaded ? "flex" : "hidden"
+        }  z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-center items-center overflow-hidden relative bg-[#c7d783]`}
+      >
         <div className=" w-full h-screen flex flex-col justify-center items-center overflow-hidden absolute top-0 left-0">
           <NextReactP5Wrapper sketch={sketch} />
         </div>
@@ -401,6 +421,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
         src={songs[currentSong].file}
         showSkipControls={true}
         showJumpControls={false}
+        autoPlay={false}
         defaultCurrentTime="00:00"
         defaultDuration={`0${Math.floor(songs[currentSong].duration / 60)}:${
           songs[currentSong].duration % 60 < 10
