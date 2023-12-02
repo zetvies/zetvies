@@ -383,7 +383,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           isLoaded ? "flex" : "hidden"
-        }  z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-end sm:justify-center pb-[15vh] items-center overflow-hidden relative bg-[#c7d783]`}
+        }  z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-end sm:justify-center pb-[20vh] sm:pb-0 items-center overflow-hidden relative bg-[#c7d783]`}
       >
         <div className=" w-full h-[80vh] sm:h-screen flex flex-col justify-center items-center overflow-hidden absolute top-0 left-0">
           <NextReactP5Wrapper sketch={sketch} />
