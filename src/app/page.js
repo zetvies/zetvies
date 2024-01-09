@@ -23,6 +23,15 @@ import Turtle from "@/assets/images/Turtle.svg";
 
 //Profile
 import Arsa from "@/assets/images/Arsa.jpg";
+import Nongki from "@/assets/images/Nongki.png";
+import Sisva from "@/assets/images/Sisva.png";
+import Rayain from "@/assets/images/Rayain.png";
+import Sensoria from "@/assets/images/Sensoria.jpg";
+import PerfectLiar from "@/assets/images/Perfect-Liar.png";
+import MurderByStage from "@/assets/images/Murder-By-Stage.jpeg";
+import SalingSulam from "@/assets/images/Saling-Sulam.png";
+import ArezaNirmala from "@/assets/images/Areza-Nirmala.jpg";
+import SafeSpace from "@/assets/images/SafeSpace.png";
 import { TypeAnimation } from "react-type-animation";
 
 import { NextReactP5Wrapper } from "@p5-wrapper/next";
@@ -33,11 +42,45 @@ export default function Home() {
   const smMd = useMedia("(min-width: 640px) and (max-width:1050px)", false);
   const mdUp = useMedia("(min-width: 1050px)", false);
   const lottieRef = useRef();
+  const audioPlayerRef = useRef();
   const mainRef = useRef();
+  const portfolioRef = useRef();
 
   let [Anindya, setAnindya] = useState();
   let [Cat, setCat] = useState();
   let [Untuk, setUntuk] = useState();
+  let [openModal, setOpenModal] = useState(0);
+  let [openSection, setOpenSection] = useState(0);
+
+  let modalContents = [
+    {
+      color: "bg-[#1f4846]",
+    },
+    {
+      color: "bg-gradient-to-br from-sky-600 to-blue-700",
+    },
+    {
+      color: "bg-[#3d2561]",
+    },
+    {
+      color: "bg-[#04041c]",
+    },
+    {
+      color: "bg-[#85b9c2]",
+    },
+    {
+      color: "bg-[#b42f2e]",
+    },
+    {
+      color: "bg-gradient-to-t from-[#deafb1] from-40% to-[#e1a1a3]",
+    },
+    {
+      color: "bg-[#84765b]",
+    },
+    {
+      color: "bg-[#8cb1cc]",
+    },
+  ];
 
   useEffect(() => {
     async function importFile() {
@@ -47,6 +90,8 @@ export default function Home() {
       setAnindya(anindya.default);
       setCat(cat.default);
       setUntuk(untuk.default);
+
+      audioPlayerRef.current.audio.current.pause();
     }
     importFile();
   }, []);
@@ -73,17 +118,28 @@ export default function Home() {
   let [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    mainRef.current.addEventListener("wheel", function (event) {
+    let scrollHandler = (event) => {
       if (event.deltaY === 100 || event.deltaY === -100) {
         event.preventDefault();
 
-        mainRef.current.scrollBy({
-          top: event.deltaY,
-          behavior: "smooth",
-        });
+        if (openSection === 0) {
+          mainRef.current.scrollBy({
+            top: event.deltaY,
+            behavior: "smooth",
+          });
+        }
+
+        if (openModal === 0 && openSection === 2) {
+          portfolioRef.current.scrollLeft =
+            portfolioRef.current.scrollLeft + event.deltaY * 4;
+        }
       }
-    });
-  }, []);
+    };
+
+    mainRef.current.addEventListener("wheel", scrollHandler);
+
+    return () => mainRef.current.removeEventListener("wheel", scrollHandler);
+  }, [openSection, openModal]);
 
   const sketch = (p5) => {
     let xoff1 = 0;
@@ -247,7 +303,9 @@ export default function Home() {
               // maxWidth: smUp ? "34.4vh" : "27.6vh",
               width: smUp ? "34.4vh" : "27.6vh",
               // position: "absolute",
-              transform: "translateY(-15vh)translateX(0px)",
+              transform: smUp
+                ? "translateY(-21vh)translateX(0px)"
+                : "translateY(-15vh)translateX(0px)",
               left: 0,
               right: 0,
               marginLeft: "auto",
@@ -371,25 +429,46 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           </div>
 
           <div className="flex">
-            <button className="bg-[#afc150] hover:bg-[#9fb140] text-[15px] md:text-[18px] text-white py-2 px-6 w-fit rounded  mr-2  font-bold">
+            <button
+              onClick={() => setOpenSection(1)}
+              className="bg-[#afc150] hover:bg-[#9fb140] text-[15px] md:text-[18px] text-white py-2 px-6 w-fit rounded  mr-2  font-bold"
+            >
               About Me
             </button>
-            <button className="bg-[#00a0a2] hover:bg-[#0095a2] text-[15px] md:text-[18px] text-white py-2 px-6 w-fit rounded font-bold">
+            <button
+              onClick={() => setOpenSection(2)}
+              className="bg-[#00a0a2] hover:bg-[#0095a2] text-[15px] md:text-[18px] text-white py-2 px-6 w-fit rounded font-bold"
+            >
               Projects
             </button>
           </div>
         </div>
       </div>
+      {/* About */}
       <div
         className={` ${
-          isLoaded ? "flex" : "hidden"
-        }  z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-end sm:justify-center pb-[20vh] sm:pb-0 items-center overflow-hidden relative bg-[#c7d783]`}
+          isLoaded && openSection === 1 ? "flex" : "hidden"
+        } absolute top-0 left-0 z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-end sm:justify-center pb-[20vh] sm:pb-0 items-center overflow-hidden bg-[#c7d783]`}
       >
+        <button
+          className="absolute h-[6vh] w-[6vh] top-[5vh] right-[5vh] cursor-pointer z-[100000]"
+          onClick={() => setOpenSection(0)}
+        >
+          <svg
+            focusable="false"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            data-testid="CloseIcon"
+            className="h-[6vh] w-[6vh]"
+          >
+            <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+          </svg>
+        </button>
         <div className=" w-full h-[80vh] sm:h-screen flex flex-col justify-center items-center overflow-hidden absolute top-0 left-0">
           <NextReactP5Wrapper sketch={sketch} />
         </div>
         <div className="flex flex-col items-center justify-center w-screen">
-          <div className="text-gray-800 text-[30px] sm:text-[36px] md:text-[48px] ">
+          <div className="text-gray-800 text-[30px] sm:text-[36px] md:text-[36px] ">
             <b> Bimo Arsa</b>{" "}
             <span className="text-[24px] sm:text-[28px] md:text-[36px]">
               is a
@@ -406,7 +485,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             ]}
             wrapper="i"
             speed={50}
-            className="font-serif text-[8vw] sm:text-[48px] md:text-[64px]"
+            className="font-serif text-[8vw] sm:text-[36px] md:text-[64px]"
             style={{
               display: "inline-block",
               color: "rgb(31 41 55)",
@@ -417,15 +496,796 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           />
         </div>
       </div>
+      <div
+        className={` ${
+          isLoaded && openSection === 2 ? "flex" : "hidden"
+        } absolute top-0 left-0  z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-center items-center overflow-hidden bg-[#1fb9bb]`}
+      >
+        <button
+          className="absolute h-[6vh] w-[6vh] top-[5vh] right-[5vh] cursor-pointer fill-white z-[100000]"
+          onClick={() => setOpenSection(0)}
+        >
+          <svg
+            focusable="false"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            data-testid="CloseIcon"
+            className="h-[6vh] w-[6vh]"
+          >
+            <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+          </svg>
+        </button>
+        <div className="flex items-center flex-col sm:flex-row justify-center ">
+          <div className="text-white text-[18px] sm:text-[20px] sm:translate-x-0 sm:w-[190px] sm:text-right">
+            I aspire to be
+          </div>
+          <div className=" flex justify-center mx-4 w-[200px]  sm:translate-x-0">
+            <TypeAnimation
+              sequence={["Artsy✨", 3000, "Techy🤖", 3000, "Brandy🥂", 3000]}
+              wrapper="i"
+              speed={50}
+              className="font-serif text-gray-100 text-[36px] sm:text-[36px] md:text-[36px]"
+              style={{
+                display: "inline-block",
+                // color: "rgb(31 41 55)",
+                // marginLeft: 6,
+                // transform: "translateY(-10px)",
+              }}
+              repeat={Infinity}
+            />
+          </div>
+
+          <div className="text-white text-[16px] sm:text-[20px]  sm:translate-x-[-20px] sm:w-[190px]  ">
+            and I have proofs.
+          </div>
+        </div>
+
+        <div
+          ref={portfolioRef}
+          id={"portfolio"}
+          className="flex mt-[24px] w-[100vw] overflow-x-scroll pl-[15%] pr-[5%] sm:pr-[8%] scroll-smooth pb-[32px] "
+        >
+          <div className=" rotate-[-90deg] h-[70px] sm:h-[120px] w-0 translate-y-[240px] sm:translate-y-[270px] text-white text-bold text-[18px] sm:text-[24px]">
+            Product<span className="text-[#00a0a2]">o</span>Development
+          </div>
+          <div
+            className="flex flex-col bg-[#1f4846] rounded-[3vh] overflow-hidden h-[53vh] sm:h-[57vh] min-w-[260px] max-w-[260px] sm:min-w-[300px] sm:max-w-[300px] mr-[16px] cursor-pointer relative "
+            onClick={() => setOpenModal(1)}
+          >
+            <div className="text-gray-100 p-4 z-10 ">
+              <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+                Nongki!
+              </b>
+
+              <span className="text-[16px] sm:text-[18px]">
+                <br />
+                Social Game Database
+              </span>
+              <div className="flex flex-wrap mt-4">
+                <div className="bg-[#bd3229] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Product Manager
+                </div>
+                <div className="bg-[#4275db] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Creative Director
+                </div>
+                <div className="bg-[#e4bf4b] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mt-2 ">
+                  Front End Developer
+                </div>
+              </div>
+            </div>
+            <div className=" w-[100%] h-[100%] absolute bottom-[-30px]">
+              <Image src={Nongki} fill style={{ objectFit: "contain" }} />
+            </div>
+          </div>
+          <div
+            onClick={() => setOpenModal(2)}
+            className=" bg-gradient-to-br from-sky-600 to-blue-700 shadow flex flex-col  rounded-[3vh] overflow-hidden h-[53vh] sm:h-[57vh] min-w-[260px] max-w-[260px] sm:min-w-[300px] sm:max-w-[300px] mr-[16px] cursor-pointer relative "
+          >
+            <div className="text-gray-100 p-4 z-10 ">
+              <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+                Sisva
+              </b>
+
+              <span className="text-[16px] sm:text-[18px]">
+                <br />
+                School Digitalization
+              </span>
+              <div className="flex flex-wrap mt-4">
+                <div className="bg-[#F96756] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Product Manager
+                </div>
+                <div className="bg-[#7F41CE] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Creative Director
+                </div>
+                <div className="bg-[#00AC96] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2 mt-2 ">
+                  Front End Developer
+                </div>
+                <div className="bg-[#F79F1C] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mt-2 ">
+                  UI/UX Design
+                </div>
+              </div>
+            </div>
+            <div className=" w-[100%] h-[100%] absolute bottom-[-50px]">
+              <Image src={Sisva} fill style={{ objectFit: "contain" }} />
+            </div>
+          </div>
+          <div
+            onClick={() => setOpenModal(3)}
+            className="flex flex-col bg-[#3d2561] rounded-[3vh] overflow-hidden h-[53vh] sm:h-[57vh] min-w-[260px] max-w-[260px] sm:min-w-[300px] sm:max-w-[300px] mr-[16px] cursor-pointer relative "
+          >
+            <div className="text-gray-100 p-4 z-10 ">
+              <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+                Rayain
+              </b>
+
+              <span className="text-[16px] sm:text-[18px]">
+                <br />
+                Digital Greeting Card
+              </span>
+              <div className="flex flex-wrap mt-4">
+                <div className="bg-[#5977f1] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Product Manager
+                </div>
+                <div className="bg-[#4eac5e] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Creative Director
+                </div>
+                <div className="bg-[#de556a] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2 mt-2 ">
+                  Front End Developer
+                </div>
+                <div className="bg-[#7b32ec] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mt-2 ">
+                  UI/UX Design
+                </div>
+              </div>
+            </div>
+            <div className=" w-[100%] h-[100%] absolute bottom-[-60px]">
+              <Image src={Rayain} fill style={{ objectFit: "contain" }} />
+            </div>
+          </div>
+          <div className=" rotate-[-90deg] h-[70px] sm:h-[120px] w-0 translate-y-[240px] sm:translate-y-[260px] text-white text-bold text-[18px] sm:text-[24px] ml-[40px] sm:ml-[80px]">
+            Creative<span className="text-[#00a0a2]">o</span>Technology
+          </div>
+          <div
+            onClick={() => setOpenModal(4)}
+            className="  flex flex-col bg-[#04041c] rounded-[3vh] overflow-hidden h-[53vh] sm:h-[57vh] min-w-[260px] max-w-[260px] sm:min-w-[300px] sm:max-w-[300px] mr-[16px] cursor-pointer relative "
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#04041c] from-65% to-transparent  h-[50%] w-[100%] absolute top-0 z-20">
+              <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+                SENSORIA
+              </b>
+
+              <span className="text-[16px] sm:text-[18px]">
+                <br />
+                Light Installation
+              </span>
+              <div className="flex flex-wrap mt-4">
+                <div className="bg-[#4eac5e] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Creative Director
+                </div>
+              </div>
+            </div>
+            <div className=" w-[100%] h-[70%] absolute bottom-0">
+              <Image src={Sensoria} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+
+          <div
+            onClick={() => setOpenModal(5)}
+            className="  flex flex-col bg-[#85b9c2] rounded-[3vh] overflow-hidden h-[53vh] sm:h-[57vh] min-w-[260px] max-w-[260px] sm:min-w-[300px] sm:max-w-[300px] mr-[16px] cursor-pointer relative "
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#85b9c2] from-65% to-transparent  h-[50%] w-[100%] absolute top-0 z-20">
+              <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+                Perfect Liar
+              </b>
+
+              <span className="text-[16px] sm:text-[18px]">
+                <br />
+                Extended Reality
+              </span>
+              <div className="flex flex-wrap mt-4">
+                <div className="bg-[#b5a468] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  XR Engineer
+                </div>
+              </div>
+            </div>
+            <div className=" w-[100%] h-[70%] absolute bottom-0">
+              <Image src={PerfectLiar} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+
+          <div
+            onClick={() => setOpenModal(6)}
+            className="  flex flex-col bg-[#b42f2e] rounded-[3vh] overflow-hidden h-[53vh] sm:h-[57vh] min-w-[260px] max-w-[260px] sm:min-w-[300px] sm:max-w-[300px] mr-[16px] cursor-pointer relative "
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#b42f2e] from-70% to-transparent  h-[45%] w-[100%] absolute top-0 z-20">
+              <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+                Murder by Stage
+              </b>
+
+              <span className="text-[16px] sm:text-[18px]">
+                <br />
+                Festival Teater Jakarta
+              </span>
+              <div className="flex flex-wrap mt-4">
+                <div className="bg-[#0e0b07] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Multimedia Design
+                </div>
+              </div>
+            </div>
+            <div className=" w-[100%] h-[70%] absolute bottom-0">
+              <Image src={MurderByStage} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+          <div
+            onClick={() => setOpenModal(7)}
+            className="flex flex-col  bg-gradient-to-t from-[#deafb1] from-60% to-[#e1a1a3]  rounded-[3vh] overflow-hidden h-[53vh] sm:h-[57vh] min-w-[260px] max-w-[260px] sm:min-w-[300px] sm:max-w-[300px] mr-[16px] cursor-pointer relative "
+          >
+            <div className="text-gray-100 p-4 z-10 ">
+              <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+                Saling Sulam
+              </b>
+
+              <span className="text-[16px] sm:text-[18px]">
+                <br />
+                Multiuser Augmented Reality
+              </span>
+              <div className="flex flex-wrap mt-4">
+                <div className="bg-[#7f3b44] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Creative Director
+                </div>
+                <div className="bg-[#558f89] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold ">
+                  Full Stack Developer
+                </div>
+              </div>
+            </div>
+            <div className=" w-[100%] h-[60%] absolute bottom-0">
+              <Image src={SalingSulam} fill style={{ objectFit: "contain" }} />
+            </div>
+          </div>
+          <div className=" rotate-[-90deg] h-[70px] sm:h-[120px] w-0 translate-y-[210px] sm:translate-y-[200px] text-white text-bold text-[18px] sm:text-[24px] ml-[40px] sm:ml-[80px]">
+            Art<span className="text-[#00a0a2]">o</span>Projects
+          </div>
+
+          <div
+            onClick={() => setOpenModal(8)}
+            className="  flex flex-col bg-[#84765b] rounded-[3vh] overflow-hidden h-[53vh] sm:h-[57vh] min-w-[260px] max-w-[260px] sm:min-w-[300px] sm:max-w-[300px] mr-[16px] cursor-pointer relative "
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#84765b] from-65% to-transparent  h-[50%] w-[100%] absolute top-0 z-20">
+              <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+                Areza Nirmala
+              </b>
+
+              <span className="text-[16px] sm:text-[18px]">
+                <br />
+                Music EP
+              </span>
+              <div className="flex flex-wrap mt-4">
+                <div className="bg-[#4eac5e] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Singer-Songwriter
+                </div>
+                <div className="bg-[#56432c] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Creative Director
+                </div>
+              </div>
+            </div>
+            <div className=" w-[100%] h-[70%] absolute bottom-0">
+              <Image src={ArezaNirmala} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+          <div className=" rotate-[-90deg] h-[70px] sm:h-[120px] w-0 translate-y-[230px] sm:translate-y-[250px] text-white text-bold text-[18px] sm:text-[24px] ml-[40px] sm:ml-[80px]">
+            Voluntary<span className="text-[#00a0a2]">o</span>Activities
+          </div>
+
+          <div
+            onClick={() => setOpenModal(9)}
+            className="  flex flex-col bg-[#8cb1cc] rounded-[3vh] overflow-hidden h-[53vh] sm:h-[57vh] min-w-[260px] max-w-[260px] sm:min-w-[300px] sm:max-w-[300px] cursor-pointer relative "
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#8cb1cc] from-65% to-transparent  h-[55%] w-[100%] absolute top-0 z-20">
+              <b className="text-[22px] sm:text-[24px] h-['fit-content']">
+                Safe Space Indonesia
+              </b>
+
+              <span className="text-[16px] sm:text-[18px]">
+                <br />
+                Spoken Word Art Platform
+              </span>
+              <div className="flex flex-wrap mt-4">
+                <div className="bg-[#91787b] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                  Core Team Member
+                </div>
+              </div>
+            </div>
+            <div className=" w-[100%] h-[70%] absolute bottom-0">
+              <Image src={SafeSpace} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Portfolio Modal */}
+      <div
+        className={` ${
+          openModal === 0 ? "hidden" : ""
+        } absolute top-0 left-0 h-screen w-screen`}
+      >
+        <div
+          className=" absolute h-screen w-screen bg-[rgb(0,0,0,0.5)] top-0 left-0 z-[10000] cursor-pointer"
+          onClick={() => setOpenModal(0)}
+        ></div>
+        <div
+          className={`absolute bottom-0 sm:right-0 w-[100vw] sm:w-[80vh] sm:max-w-[85vw] ${
+            modalContents[openModal - 1]?.color
+          } h-[75vh] sm:h-screen rounded-t-[5vh] sm:rounded-l-[5vh] sm:rounded-tr-none z-[10010] overflow-hidden`}
+        >
+          <div
+            className={`${
+              openModal === 1 ? "" : "hidden"
+            } text-gray-100 p-6 sm:p-12 absolute top-0 left-0 z-[10020] flex flex-col`}
+          >
+            <b className="text-[26px] sm:text-[30px]  h-['fit-content']">
+              Nongki!
+            </b>
+
+            <span className="text-[16px] sm:text-[18px]">
+              Social Game Database
+            </span>
+            <div className="flex flex-wrap mt-2">
+              <div className="bg-[#bd3229] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2 mt-2">
+                Product Manager
+              </div>
+              <div className="bg-[#4275db] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2 mt-2">
+                Creative Director
+              </div>
+              <div className="bg-[#e4bf4b] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mt-2">
+                Front End Developer
+              </div>
+            </div>
+
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              <b>Nongki!</b> is a platform dedicated to social games, where
+              players can explore games across various genres. Beyond a mere
+              game repository, Nongki! serves as a vibrant social space where
+              gamers effortlessly connect, form communities, and dive into
+              captivating social experiences.
+            </p>
+
+            <p className="mt-[8px] text-[14px] sm:text-[16px]">
+              In this project, we aim to push the boundaries of traditional
+              website design methods.
+            </p>
+
+            <a href="https://nongki.space">
+              <button className="bg-[#4E5AEA] hover:bg-[#3E4ADA] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                Visit Nongki!
+              </button>
+            </a>
+          </div>
+
+          <div
+            className={`${
+              openModal === 2 ? "" : "hidden"
+            } text-gray-100 p-6 sm:p-12 absolute top-0 left-0 z-[10020] flex flex-col`}
+          >
+            <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+              Sisva
+            </b>
+
+            <span className="text-[16px] sm:text-[18px]">
+              School Digitalization
+            </span>
+            <div className="flex flex-wrap mt-2">
+              <div className="bg-[#F96756] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2 mt-2">
+                Product Manager
+              </div>
+              <div className="bg-[#7F41CE] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2 mt-2">
+                Creative Director
+              </div>
+              <div className="bg-[#00AC96] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2  mt-2">
+                Front End Developer
+              </div>
+              <div className="bg-[#F79F1C] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold  mt-2">
+                UI/UX Design
+              </div>
+            </div>
+
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              <b>Sisva</b> is a SaaS EdTech platform revolutionizing educational
+              systems by streamlining school operations and digitizing every
+              aspect of the academic experience. With a dedicated mission to
+              simplify school processes, Sisva offers a comprehensive suite of
+              tools and solutions aimed at enhancing efficiency and
+              accessibility, making administrative tasks more manageable and
+              fostering a more engaging learning environment.
+            </p>
+
+            <a href="https://sisva.id">
+              <button className="bg-[#ee462b] hover:bg-[#de361b] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                Visit Sisva
+              </button>
+            </a>
+          </div>
+
+          <div
+            className={`${
+              openModal === 3 ? "" : "hidden"
+            } text-gray-100 p-6 sm:p-12 absolute top-0 left-0 z-[10020] flex flex-col`}
+          >
+            <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+              Rayain
+            </b>
+
+            <span className="text-[16px] sm:text-[18px]">
+              Digital Greeting Card
+            </span>
+            <div className="flex flex-wrap mt-2">
+              <div className="bg-[#5977f1] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2 mt-2">
+                Product Manager
+              </div>
+              <div className="bg-[#4eac5e] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2 mt-2">
+                Creative Director
+              </div>
+              <div className="bg-[#de556a] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2 mt-2 ">
+                Front End Developer
+              </div>
+              <div className="bg-[#7b32ec] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mt-2 ">
+                UI/UX Design
+              </div>
+            </div>
+
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              <b>Rayain</b> is a modern digital greeting card platform designed
+              to infuse special moments with heartfelt celebrations. With its
+              innovative approach, Rayain offers a seamless way to mark
+              cherished occasions, providing a diverse range of customizable
+              digital cards for every heartfelt sentiment. Rayain ensures
+              special moment is commemorated with sincerity and joy.
+            </p>
+
+            <a href="https://rayain.id">
+              <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                Visit Rayain
+              </button>
+            </a>
+          </div>
+
+          <div
+            className={`${
+              openModal === 4 ? "" : "hidden"
+            } text-gray-100 p-6 sm:p-12 absolute top-0 left-0 z-[10020] flex flex-col`}
+          >
+            <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+              SENSORIA
+            </b>
+
+            <span className="text-[16px] sm:text-[18px]">
+              Light Installation
+            </span>
+            <div className="flex flex-wrap mt-4">
+              <div className="bg-[#4eac5e] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                Creative Director
+              </div>
+            </div>
+
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              <b>SENSORIA</b> is an immersive workshop curated by Goethe
+              Institut Indonesia, where participants delve into the world of
+              lighting installations guided by renowned experts Convert Textured
+              and Tomy Herseta. This immersive experience offers participants a
+              deep dive into the world of creating evocative atmospheres and
+              immersive spaces through scenography.
+            </p>
+
+            <p className="mt-[8px] text-[14px] sm:text-[16px]">
+              In the workshop that was organized from June-September 2023, Bimo
+              Arsa was part of the Light Installation team.
+            </p>
+
+            <a href="https://www.goethe.de/ins/id/id/ver.cfm?event_id=24974490">
+              <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                View Article
+              </button>
+            </a>
+          </div>
+
+          <div
+            className={`${
+              openModal === 5 ? "" : "hidden"
+            } text-gray-100 p-6 sm:p-12 absolute top-0 left-0 z-[10020] flex flex-col`}
+          >
+            <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+              Perfect Liar
+            </b>
+
+            <span className="text-[16px] sm:text-[18px]">Extended Reality</span>
+            <div className="flex flex-wrap mt-4">
+              <div className="bg-[#b5a468] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                XR Engineer
+              </div>
+            </div>
+
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              <b>Perfect Liar</b> is a sensational single by Putri Ariani, the
+              Indonesian prodigy who astounded audiences with her remarkable
+              performance on America's Got Talent. With haunting melodies and
+              poignant lyrics, "Perfect Liar" takes listeners on an evocative
+              musical voyage, showcasing Putri's raw talent and ability to
+              connect deeply through her music.
+            </p>
+
+            <p className="mt-[8px] text-[14px] sm:text-[16px]">
+              In the creation of the Music Video, Bimo Arsa was part of XR
+              Engineer team who are responsible for planning and operating the
+              cutting-edge technology.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=-K6nfNuImOc">
+              <button className="bg-[#b5a468] hover:bg-[#a59458] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                Watch Perfect Liar
+              </button>
+            </a>
+          </div>
+
+          <div
+            className={`${
+              openModal === 6 ? "" : "hidden"
+            } text-gray-100 p-6 sm:p-12 absolute top-0 left-0 z-[10020] flex flex-col`}
+          >
+            <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+              Murder by Stage
+            </b>
+
+            <span className="text-[16px] sm:text-[18px]">Extended Reality</span>
+            <div className="flex flex-wrap mt-4">
+              <div className="bg-[#000000] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                Multimedia Design
+              </div>
+            </div>
+
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              <b>Murder by Stage: A Killing Enigma</b> is an enthralling theatre
+              piece by Teater Asa, eligible for performance at the illustrious
+              Festival Teater Jakarta, a pinnacle in Indonesia's theater
+              landscape. This production unravels a gripping mystery, weaving
+              together suspense, intrigue, and masterful storytelling. Its
+              narrative depth and flawless execution have earned numerous
+              prestigious awards and accolades.
+            </p>
+
+            <p className="mt-[8px] text-[14px] sm:text-[16px]">
+              In the production of the performance, Bimo Arsa took part as
+              Multimedia Design to create a way of story-telling that triggers
+              wonder.
+            </p>
+
+            <a href="https://www.instagram.com/p/Cy2YzlxyZQ_/?next=%2Fp%2FB9Q6c9OHMxT%2F&hl=ne">
+              <button className="bg-[#000000] hover:bg-[#202020] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                View Official Documentation
+              </button>
+            </a>
+          </div>
+
+          <div
+            className={`${
+              openModal === 7 ? "" : "hidden"
+            } text-gray-100 p-6 sm:p-12 absolute top-0 left-0 z-[10020] flex flex-col`}
+          >
+            <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+              Saling Sulam
+            </b>
+
+            <span className="text-[16px] sm:text-[18px]">
+              Multiuser Augmented Reality
+            </span>
+
+            <div className="flex flex-wrap mt-4">
+              <div className="bg-[#7f3b44] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                Creative Director
+              </div>
+              <div className="bg-[#558f89] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold ">
+                Full Stack Developer
+              </div>
+            </div>
+
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              <b>Saling Sulam</b> is an innovative exhibit crafted by no:rue for
+              Ourchetype Exhibition held in December 2023 - January 2024, Using
+              a novel approach to multiuser Augmented Reality, visitors are
+              invited to partake in a collaborative experience, contributing to
+              the creation of a stunning embroidery together and fostering a
+              sense of community and shared artistry.
+            </p>
+
+            <div className="flex">
+              <a href="https://salingsulam.zetvi.es">
+                <button className="bg-[#7f3b44] hover:bg-[#6f2b34] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                  Visit Saling Sulam
+                </button>
+              </a>
+              <a href="https://www.instagram.com/ourchetype/">
+                <button className="bg-[#558f89] hover:bg-[#457f79] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                  Visit Ourchetype
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            className={`${
+              openModal === 8 ? "" : "hidden"
+            } text-gray-100 p-6 sm:p-12 absolute top-0 left-0 z-[10020] flex flex-col`}
+          >
+            <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+              Areza Nirmala
+            </b>
+
+            <span className="text-[16px] sm:text-[18px]">Music EP</span>
+
+            <div className="flex flex-wrap mt-4">
+              <div className="bg-[#4eac5e] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                Singer-Songwriter
+              </div>
+              <div className="bg-[#56432c] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                Creative Director
+              </div>
+            </div>
+
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              <b>Areza Nirmala</b> is a story about encounters, farewells, and
+              everything that happens in between.
+            </p>
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              This project was initiated by Bimo Arsa and Nissa Annabiilah, and
+              given life by Eky Rizkani through the magical arrangements he
+              crafted. Comprising five songs that chronologically narrate in
+              five acts, Areza Nirmala invites us for a fleeting glance through
+              the journey of human relationships - and ultimately, reflecting on
+              our own individual connections.
+            </p>
+
+            <div className="flex">
+              <a href="https://www.youtube.com/watch?v=hw-1M0Gacn0&pp=ygUNYXJlemEgbmlybWFsYQ%3D%3D">
+                <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                  Explore Areza Nirmala
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            className={`${
+              openModal === 9 ? "" : "hidden"
+            } text-gray-100 p-6 sm:p-12 absolute top-0 left-0 z-[10020] flex flex-col`}
+          >
+            <b className="text-[26px] sm:text-[30px] md:text-[30px] h-['fit-content']">
+              Safe Space Indonesia
+            </b>
+
+            <span className="text-[16px] sm:text-[18px]">
+              Spoken Word Art Platform
+            </span>
+
+            <div className="flex flex-wrap mt-4">
+              <div className="bg-[#91787b] w-[fit-content] p-1 sm:px-2 text-[11px] sm:text-[12px] rounded font-bold mr-2">
+                Core Team Member
+              </div>
+            </div>
+
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              <b>Safe Space Indonesia</b> is an Indonesia-based home of
+              storytellers, lyricists, spoken word poets, and more.
+            </p>
+            <p className="mt-[24px] text-[14px] sm:text-[16px]">
+              We are building a non-judgmental, secure haven for creative
+              expression, inviting individuals from every walk of life to freely
+              share their voices. At our core, we hold the firm belief that
+              access to artistic expression and safe, inclusive spaces is an
+              inherent right for all.
+            </p>
+
+            <div className="flex">
+              <a href="https://safespaceindo.com/">
+                <button className="bg-[#91787b] hover:bg-[#81686b] text-[13px] md:text-[16px] text-white py-2 px-6 w-fit rounded  mr-2 mt-4 font-bold">
+                  Visit Safe Space Indonesia
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            className={`${
+              openModal === 1 ? "sm:flex" : ""
+            } hidden w-[100%] h-[70%] absolute bottom-[-40px] z-1`}
+          >
+            <Image src={Nongki} fill style={{ objectFit: "cover" }} />
+          </div>
+
+          <div
+            className={`${
+              openModal === 2 ? "sm:flex" : ""
+            } hidden w-[80%] h-[60%] right-0 absolute bottom-[-30px] z-1`}
+          >
+            <Image src={Sisva} fill style={{ objectFit: "contain" }} />
+          </div>
+
+          <div
+            className={`${
+              openModal === 3 ? "sm:flex" : ""
+            } hidden w-[80%] h-[60%] right-0 absolute bottom-[-30px] z-1`}
+          >
+            <Image src={Rayain} fill style={{ objectFit: "contain" }} />
+          </div>
+
+          <div
+            className={` ${
+              openModal === 4 ? "sm:flex" : ""
+            } hidden flex-col bg-[#04041c] rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#04041c] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
+            <div className=" w-[100%] h-[45%] absolute bottom-0">
+              <Image src={Sensoria} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+
+          <div
+            className={` ${
+              openModal === 5 ? "sm:flex" : ""
+            } hidden flex-col  rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#85b9c2] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
+            <div className=" w-[100%] h-[45%] absolute bottom-0">
+              <Image src={PerfectLiar} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+
+          <div
+            className={` ${
+              openModal === 6 ? "sm:flex" : ""
+            } hidden flex-col  rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#b42f2e] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
+            <div className=" w-[100%] h-[55%] absolute bottom-0">
+              <Image src={MurderByStage} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+
+          <div
+            className={`${
+              openModal === 7 ? "sm:flex" : ""
+            } hidden w-[100%] h-[40%] absolute bottom-[10px] z-1`}
+          >
+            <Image src={SalingSulam} fill style={{ objectFit: "contain" }} />
+          </div>
+
+          <div
+            className={` ${
+              openModal === 8 ? "sm:flex" : ""
+            } hidden flex-col  rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#84765b] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
+            <div className=" w-[100%] h-[55%] absolute bottom-0">
+              <Image src={ArezaNirmala} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+          <div
+            className={` ${
+              openModal === 9 ? "sm:flex" : ""
+            } hidden flex-col  rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+          >
+            <div className="text-gray-100 p-4 bg-gradient-to-b from-[#8cb1cc] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
+            <div className=" w-[100%] h-[55%] absolute bottom-0">
+              <Image src={SafeSpace} fill style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+        </div>
+      </div>
 
       <AudioPlayer
+        ref={audioPlayerRef}
         className={`${
           isLoaded ? "opacity-100 visible" : "opacity-0 invisible"
         } transition-opacity duration-500`}
         src={songs[currentSong].file}
         showSkipControls={true}
         showJumpControls={false}
-        autoPlay={false}
+        autoPlayAfterSrcChange={false}
         defaultCurrentTime="00:00"
         defaultDuration={`0${Math.floor(songs[currentSong].duration / 60)}:${
           songs[currentSong].duration % 60 < 10
