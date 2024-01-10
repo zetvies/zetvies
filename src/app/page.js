@@ -1316,7 +1316,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             <Image
               src={Disk}
               alt="Disk"
-              style={{ height: "3.6svh", width: "4svh", marginRight: ".8svh" }}
+              style={{ height: "3.3svh", width: "4svh", marginRight: ".8svh" }}
             />
             <div
               style={{
@@ -1329,7 +1329,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             >
               <div
                 style={{
-                  fontSize: "2.3svh",
+                  fontSize: "2.2svh",
                   fontWeight: 700,
                   marginRight: ".5svh",
                 }}
@@ -1338,7 +1338,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               </div>
               <div
                 style={{
-                  fontSize: "1.8svh",
+                  fontSize: "1.7svh",
                   fontWeight: 400,
                   transform: "translateY(-1px)",
                   marginTop: 2,
