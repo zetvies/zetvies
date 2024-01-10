@@ -46,9 +46,11 @@ export default function Home() {
   const mainRef = useRef();
   const portfolioRef = useRef();
 
-  let [Anindya, setAnindya] = useState();
-  let [Cat, setCat] = useState();
-  let [Untuk, setUntuk] = useState();
+  let [JalanSurabaya, setJalanSurabaya] = useState();
+  let [Kita, setKita] = useState();
+  let [TentangKamu, setTentangKamu] = useState();
+  let [SatuTahun, setSatuTahun] = useState();
+  let [ReKita, setReKita] = useState();
   let [openModal, setOpenModal] = useState(0);
   let [openSection, setOpenSection] = useState(0);
 
@@ -84,12 +86,17 @@ export default function Home() {
 
   useEffect(() => {
     async function importFile() {
-      const anindya = await import(`@/assets/songs/Anindya.mp3`);
-      const cat = await import(`@/assets/songs/Cat.mp3`);
-      const untuk = await import(`@/assets/songs/Untuk.mp3`);
-      setAnindya(anindya.default);
-      setCat(cat.default);
-      setUntuk(untuk.default);
+      const jalanSurabaya = await import(`@/assets/songs/Jalan-Surabaya.mp3`);
+      const kita = await import(`@/assets/songs/Kita.mp3`);
+      const tentangKamu = await import(`@/assets/songs/Tentang-Kamu.mp3`);
+      const satuTahun = await import(`@/assets/songs/Satu-Tahun.mp3`);
+      const reKita = await import(`@/assets/songs/Re-Kita.mp3`);
+      
+      setJalanSurabaya(jalanSurabaya.default)
+      setKita(kita.default)
+      setTentangKamu(tentangKamu.default)
+      setSatuTahun(satuTahun.default)
+      setReKita(reKita.default)
 
       audioPlayerRef.current.audio.current.pause();
     }
@@ -98,19 +105,29 @@ export default function Home() {
 
   let songs = [
     {
-      title: "Anindya",
-      file: Anindya,
-      duration: 139,
+      title: "Jalan Surabaya",
+      file: JalanSurabaya,
+      duration: 183,
     },
     {
-      title: "Cat",
-      file: Cat,
-      duration: 295,
+      title: "Kita",
+      file: Kita,
+      duration: 244,
     },
     {
-      title: "Untuk:",
-      file: Untuk,
-      duration: 257,
+      title: "Tentang Kamu",
+      file: TentangKamu,
+      duration: 166,
+    },
+    {
+      title: "Satu Tahun",
+      file: SatuTahun,
+      duration: 195,
+    },
+    {
+      title: "Re: Kita",
+      file: ReKita,
+      duration: 350,
     },
   ];
   let [currentSong, setCurrentSong] = useState(0);
@@ -1326,7 +1343,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
                 display: "flex",
                 flexWrap: "wrap",
                 alignItems: "flex-end",
-                maxWidth: "20svh",
+                // maxWidth: "45svh",
                 width: "45vw",
               }}
             >
@@ -1347,7 +1364,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
                   marginTop: 2,
                 }}
               >
-                Bimo Arsa
+                Areza Nirmala
               </div>
             </div>
           </div>,
@@ -1357,7 +1374,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             style={{
               marginRight: "6vw",
               alignItems: "center",
-              minWidth: 160,
+              width: "20vw",
             }}
             className="hidden md:flex"
           >
@@ -1372,7 +1389,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               </span>
               <br />
               <span className="font black" style={{ fontSize: "1.8svh" }}>
-                Bimo Arsa
+                Areza Nirmala
               </span>
             </div>
           </div>,
