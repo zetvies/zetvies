@@ -870,7 +870,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               website design methods.
             </p>
 
-            <a href="https://nongki.space">
+            <a target="_blank" href="https://nongki.space">
               <button className="bg-[#4E5AEA] hover:bg-[#3E4ADA] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 Visit Nongki!
               </button>
@@ -914,7 +914,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               fostering a more engaging learning environment.
             </p>
 
-            <a href="https://sisva.id">
+            <a target="_blank" href="https://sisva.id">
               <button className="bg-[#ee462b] hover:bg-[#de361b] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 Visit Sisva
               </button>
@@ -957,7 +957,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               special moment is commemorated with sincerity and joy.
             </p>
 
-            <a href="https://rayain.id">
+            <a target="_blank" href="https://rayain.id">
               <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 Visit Rayain
               </button>
@@ -996,7 +996,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               Arsa was part of the Light Installation team.
             </p>
 
-            <a href="https://www.goethe.de/ins/id/id/ver.cfm?event_id=24974490">
+            <a target="_blank" href="https://www.goethe.de/ins/id/id/ver.cfm?event_id=24974490">
               <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 View Article
               </button>
@@ -1036,7 +1036,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               cutting-edge technology.
             </p>
 
-            <a href="https://www.youtube.com/watch?v=-K6nfNuImOc">
+            <a target="_blank" href="https://www.youtube.com/watch?v=-K6nfNuImOc">
               <button className="bg-[#b5a468] hover:bg-[#a59458] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 Watch Perfect Liar
               </button>
@@ -1076,7 +1076,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               create a way of story-telling that triggers wonder.
             </p>
 
-            <a href="https://www.instagram.com/p/Cy2YzlxyZQ_/?next=%2Fp%2FB9Q6c9OHMxT%2F&hl=ne">
+            <a target="_blank" href="https://www.instagram.com/p/Cy2YzlxyZQ_/?next=%2Fp%2FB9Q6c9OHMxT%2F&hl=ne">
               <button className="bg-[#000000] hover:bg-[#202020] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 View Official Documentation
               </button>
@@ -1115,12 +1115,12 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             </p>
 
             <div className="flex flex-col md:flex-row">
-              <a href="https://salingsulam.zetvi.es">
+              <a target="_blank" href="https://salingsulam.zetvi.es">
                 <button className="bg-[#7f3b44] hover:bg-[#6f2b34] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                   Visit Saling Sulam
                 </button>
               </a>
-              <a href="https://www.instagram.com/ourchetype/">
+              <a target="_blank" href="https://www.instagram.com/ourchetype/">
                 <button className="bg-[#558f89] hover:bg-[#457f79] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[.8svh] font-bold">
                   Visit Ourchetype
                 </button>
@@ -1162,7 +1162,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             </p>
 
             <div className="flex">
-              <a href="https://www.youtube.com/watch?v=hw-1M0Gacn0&pp=ygUNYXJlemEgbmlybWFsYQ%3D%3D">
+              <a target="_blank" href="https://www.youtube.com/watch?v=hw-1M0Gacn0&pp=ygUNYXJlemEgbmlybWFsYQ%3D%3D">
                 <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                   Explore Areza Nirmala
                 </button>
@@ -1202,7 +1202,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             </p>
 
             <div className="flex">
-              <a href="https://safespaceindo.com/">
+              <a target="_blank" href="https://safespaceindo.com/">
                 <button className="bg-[#91787b] hover:bg-[#81686b] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                   Visit Safe Space Indonesia
                 </button>
