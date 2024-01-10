@@ -1076,7 +1076,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               create a way of story-telling that triggers wonder.
             </p>
 
-            <a target="_blank" href="https://www.instagram.com/p/Cy2YzlxyZQ_/?next=%2Fp%2FB9Q6c9OHMxT%2F&hl=ne">
+            <a target="_blank" href="https://www.instagram.com/p/Cy2YzlxyZQ_">
               <button className="bg-[#000000] hover:bg-[#202020] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 View Official Documentation
               </button>
