@@ -42,13 +42,13 @@ main::-webkit-scrollbar {
 
 /* width */
 #portfolio::-webkit-scrollbar {
-  height: 1dvh;
+  height: 1vh;
 }
 
 /* Track */
 #portfolio::-webkit-scrollbar-track {
   background: #028d8f; 
-  border-radius: 1dvh;
+  border-radius: 1vh;
   margin-left: 35vw;
   margin-right: 35vw;
 }
@@ -56,7 +56,7 @@ main::-webkit-scrollbar {
 /* Handle */
 #portfolio::-webkit-scrollbar-thumb {
   background: #e4bf4b; 
-  border-radius: 1dvh;
+  border-radius: 1vh;
 }
 
 /* Handle on hover */
