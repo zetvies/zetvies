@@ -177,10 +177,10 @@ export default function Home() {
       {
         smUp
           ? instagram.html(
-              `<button style="background-color:black;color:white;height:16vh;width:16vh;transform:translate(-8vh,-8vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:13vh;"/></button>`
+              `<button style="background-color:black;color:white;height:16svh;width:16svh;transform:translate(-8svh,-8svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:13svh;"/></button>`
             )
           : instagram.html(
-              `<button style="background-color:black;color:white;height:12vh;width:12vh;transform:translate(-6vh,-6vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:10vh;"/></button>`
+              `<button style="background-color:black;color:white;height:12svh;width:12svh;transform:translate(-6svh,-6svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:10svh;"/></button>`
             );
       }
       instagram.style("z-index:10");
@@ -188,10 +188,10 @@ export default function Home() {
       {
         smUp
           ? medium.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:9vh;width:9vh;transform:translate(-4.5vh,-4.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:7vh;"/></button>`
+              `<button style="overflow:hidden; background-color:black;color:white;height:9svh;width:9svh;transform:translate(-4.5svh,-4.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:7svh;"/></button>`
             )
           : medium.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:7vh;width:7vh;transform:translate(-3.5vh,-3.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:5vh;"/></button>`
+              `<button style="overflow:hidden; background-color:black;color:white;height:7svh;width:7svh;transform:translate(-3.5svh,-3.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:5svh;"/></button>`
             );
       }
       medium.style("z-index:10");
@@ -199,10 +199,10 @@ export default function Home() {
       {
         smUp
           ? linkedin.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:11vh;width:11vh;transform:translate(-5,5vh,-5,5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:8vh;"/></button>`
+              `<button style="overflow:hidden; background-color:black;color:white;height:11svh;width:11svh;transform:translate(-5,5svh,-5,5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:8svh;"/></button>`
             )
           : linkedin.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:9vh;width:9vh;transform:translate(-4vh,-4vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:6vh;"/></button>`
+              `<button style="overflow:hidden; background-color:black;color:white;height:9svh;width:9svh;transform:translate(-4svh,-4svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:6svh;"/></button>`
             );
       }
       linkedin.style("z-index:10");
@@ -210,10 +210,10 @@ export default function Home() {
       {
         smUp
           ? email.html(
-              `<button style="background-color:white;border:2px solid black;color:black;height:15vh;width:15vh;transform:translate(-8vh,-8vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:10.5vh;"/></button>`
+              `<button style="background-color:white;border:2px solid black;color:black;height:15svh;width:15svh;transform:translate(-8svh,-8svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:10.5svh;"/></button>`
             )
           : email.html(
-              `<button style="background-color:white;border:2px solid black;color:black;height:12vh;width:11vh;transform:translate(-5.5vh,-5.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:7vh;"/></button>`
+              `<button style="background-color:white;border:2px solid black;color:black;height:12svh;width:11svh;transform:translate(-5.5svh,-5.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:7svh;"/></button>`
             );
       }
       email.style("z-index:11");
@@ -221,10 +221,10 @@ export default function Home() {
       {
         smUp
           ? whatsapp.html(
-              `<button style="background-color:white;border:2px solid black;color:black;height:11vh;width:11vh;transform:translate(-5.5vh,-5.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:5.5vh;"/></button>`
+              `<button style="background-color:white;border:2px solid black;color:black;height:11svh;width:11svh;transform:translate(-5.5svh,-5.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:5.5svh;"/></button>`
             )
           : whatsapp.html(
-              `<button style="background-color:white;border:2px solid black;color:black;height:9vh;width:9vh;transform:translate(-4.5vh,-4.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:4.5vh;"/></button>`
+              `<button style="background-color:white;border:2px solid black;color:black;height:9svh;width:9svh;transform:translate(-4.5svh,-4.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:4.5svh;"/></button>`
             );
       }
       whatsapp.style("z-index:10");
@@ -265,16 +265,16 @@ export default function Home() {
   return (
     <main
       ref={mainRef}
-      className={`snap-y snap-mandatory scroll-smooth h-screen w-screen ${
+      className={`snap-y snap-mandatory scroll-smooth h-[100ssvh] w-screen ${
         isLoaded ? "overflow-scroll" : "overflow-hidden"
       } overflow-x-hidden bg-[#bfd6e8]`}
     >
-      <div className=" snap-always snap-start w-full h-[100vh] flex justify-center items-center relative">
-        <div className="mt-[40vh] md:mt-[50vh] flex flex-col items-center">
+      <div className=" snap-always snap-start w-full h-[100svh] flex justify-center items-center relative">
+        <div className="mt-[40svh] md:mt-[50svh] flex flex-col items-center">
           <Lottie
             animationData={LoadingAnimation}
             lottieRef={lottieRef}
-            style={{ height: mdUp ? "100vh" : "80vh", maxWidth: "90vw" }}
+            style={{ height: mdUp ? "100svh" : "80svh", maxWidth: "90vw" }}
             loop={false}
             onComplete={() => {
               if (!isLoaded) {
@@ -287,23 +287,23 @@ export default function Home() {
       </div>
 
       <div
-        className={` ${isLoaded ? "flex" : "hidden"}  w-full h-[15vh]`}
+        className={` ${isLoaded ? "flex" : "hidden"}  w-full h-[15svh]`}
       ></div>
       <div
         className={` ${
           isLoaded ? "flex" : "hidden"
-        } snap-always snap-start w-full h-[100vh] flex-col justify-end`}
+        } snap-always snap-start w-full h-[100svh] flex-col justify-end`}
       >
         <div className="flex flex-1 relative">
           <Image
             alt="tower"
             src={Tower}
             style={{
-              height: mdUp ? "42.9vh" : "34.2vh",
-              // maxWidth: smUp ? "34.4vh" : "27.6vh",
-              width: mdUp ? "34.4vh" : "27.6vh",
+              height: mdUp ? "42.9svh" : "34.2svh",
+              // maxWidth: smUp ? "34.4svh" : "27.6svh",
+              width: mdUp ? "34.4svh" : "27.6svh",
               // position: "absolute",
-              transform: mdUp ? "translateY(-21vh)" : "translateY(-17vh)",
+              transform: mdUp ? "translateY(-21svh)" : "translateY(-17svh)",
               left: 0,
               right: 0,
               marginLeft: "auto",
@@ -316,20 +316,20 @@ export default function Home() {
             src={Rabbit}
             style={{
               display: "block",
-              height: mdUp ? "65vh" : "49vh",
-              width: mdUp ? "80vh" : "40vh",
+              height: mdUp ? "65svh" : "49svh",
+              width: mdUp ? "80svh" : "40svh",
               transform: smMd
-                ? "translateX(23vh)"
+                ? "translateX(23svh)"
                 : mdUp
-                ? "translateX(32vh)"
-                : "translateX(12vh)translateY(3vh)",
+                ? "translateX(32svh)"
+                : "translateX(12svh)translateY(3svh)",
               position: "absolute",
               bottom: 0,
               left: 0,
               right: 0,
               marginLeft: "auto",
               marginRight: "auto",
-              // bottom: smUp ? "-80.4vh" : "-60.1vh",
+              // bottom: smUp ? "-80.4svh" : "-60.1svh",
               zIndex: 1,
             }}
           />
@@ -338,13 +338,13 @@ export default function Home() {
             src={Turtle}
             style={{
               display: "block",
-              height: mdUp ? "25vh" : "65vh",
-              width: mdUp ? "33vh" : "21vh",
+              height: mdUp ? "25svh" : "65svh",
+              width: mdUp ? "33svh" : "21svh",
               transform: smMd
-                ? "translateX(-20vh)translateY(-1vh)"
+                ? "translateX(-20svh)translateY(-1svh)"
                 : mdUp
-                ? "translateX(-30vh)translateY(-32vh)"
-                : "translateX(-12vh)translateY(-1vh)",
+                ? "translateX(-30svh)translateY(-32svh)"
+                : "translateX(-12svh)translateY(-1svh)",
               position: "absolute",
               bottom: 0,
               left: 0,
@@ -357,11 +357,11 @@ export default function Home() {
           <svg
             style={{
               display: "block",
-              height: mdUp ? "7.5vh" : "5.6vh",
+              height: mdUp ? "7.5svh" : "5.6svh",
               width: "100%",
               // transform: "translateX(-2px)",
               position: "absolute",
-              bottom: mdUp ? "59.8vh" : "49.8vh",
+              bottom: mdUp ? "59.8svh" : "49.8svh",
               left: 0,
               right: 0,
               marginLeft: "auto",
@@ -383,12 +383,12 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             preserveAspectRatio="none"
             style={{
               display: "block",
-              height: mdUp ? "60vh" : "50vh",
-              width: mdUp ? "223vh" : "170vh",
+              height: mdUp ? "60svh" : "50svh",
+              width: mdUp ? "223svh" : "170svh",
               position: "absolute",
               bottom: 0,
               left: "50%",
-              transform: "translateX(calc(-50% + .5vh))translateY(2px)",
+              transform: "translateX(calc(-50% + .5svh))translateY(2px)",
               marginLeft: "auto",
               marginRight: "auto",
               // zIndex: 1,
@@ -412,13 +412,13 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             />
           </svg>
         </div>
-        <div className="w-screen px-2 md:px-16 py-[1vh] md:py-[4vh] border-b-[35vh] md:border-b-[10vh] border-b-[#404041] h-[20vh] md:h-[22vh] bg-[#404041] flex flex-col md:flex-row text-white justify-between items-center">
-          <div className="hidden md:flex text-[3] text-[2vh] md:text-[2.5vh]">
+        <div className="w-screen px-2 md:px-16 py-[1svh] md:py-[4svh] border-b-[35svh] md:border-b-[10svh] border-b-[#404041] h-[20svh] md:h-[22svh] bg-[#404041] flex flex-col md:flex-row text-white justify-between items-center">
+          <div className="hidden md:flex text-[3] text-[2svh] md:text-[2.5svh]">
             Once upon a time, there was a boy who fell in love
             <br />
             with a girl whose tears tasted like moon dust.
           </div>
-          <div className="flex md:hidden text-[2vh] text-center mb-[2vh]">
+          <div className="flex md:hidden text-[2svh] text-center mb-[2svh]">
             Once upon a time, there was a
             <br />
             boy who fell in love with a girl
@@ -429,7 +429,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div className="flex">
             <button
               onClick={() => setOpenSection(1)}
-              className="bg-[#afc150] hover:bg-[#9fb140] text-[2vh] md:text-[2.5vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh]  font-bold"
+              className="bg-[#afc150] hover:bg-[#9fb140] text-[2svh] md:text-[2.5svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh]  font-bold"
             >
               About Me
             </button>
@@ -438,7 +438,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
                 setOpenSection(2);
                 portfolioRef.current.scrollLeft = 0;
               }}
-              className="bg-[#00a0a2] hover:bg-[#0095a2] text-[2vh] md:text-[2.5vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded font-bold"
+              className="bg-[#00a0a2] hover:bg-[#0095a2] text-[2svh] md:text-[2.5svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded font-bold"
             >
               Projects
             </button>
@@ -449,10 +449,10 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           isLoaded && openSection === 1 ? "flex" : "hidden"
-        } absolute top-0 left-0 z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-end md:justify-center pb-[25vh] md:pb-0 items-center overflow-hidden bg-[#c7d783]`}
+        } absolute top-0 left-0 z-[1000] snap-always snap-start w-full h-[100ssvh] flex flex-col justify-end md:justify-center pb-[25svh] md:pb-0 items-center overflow-hidden bg-[#c7d783]`}
       >
         <button
-          className="absolute md:h-[6vh] md:w-[6vh] md:top-[5vh] md:right-[5vh]h-[4.4vh] w-[4.4vh] top-[4vh] right-[4vh] cursor-pointer z-[100000]"
+          className="absolute md:h-[6svh] md:w-[6svh] md:top-[5svh] md:right-[5svh]h-[4.4svh] w-[4.4svh] top-[4svh] right-[4svh] cursor-pointer z-[100000]"
           onClick={() => setOpenSection(0)}
         >
           <svg
@@ -465,13 +465,13 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
           </svg>
         </button>
-        <div className=" w-full h-[80vh] md:h-screen flex flex-col justify-center items-center overflow-hidden absolute top-0 left-0">
+        <div className=" w-full h-[80svh] md:h-[100ssvh] flex flex-col justify-center items-center overflow-hidden absolute top-0 left-0">
           <NextReactP5Wrapper sketch={sketch} />
         </div>
         <div className="flex flex-col items-center justify-center w-screen">
-          <div className="text-gray-800 text-[3.2vh] md:text-[5.5vh] ">
+          <div className="text-gray-800 text-[3.2svh] md:text-[5.5svh] ">
             <b> Bimo Arsa</b>{" "}
-            <span className="text-[2.8vh] md:text-[5vh]">is a</span>
+            <span className="text-[2.8svh] md:text-[5svh]">is a</span>
           </div>
           <TypeAnimation
             sequence={[
@@ -484,7 +484,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             ]}
             wrapper="i"
             speed={50}
-            className="font-serif text-[3.8vh] md:text-[7vh]"
+            className="font-serif text-[3.8svh] md:text-[7svh]"
             style={{
               display: "inline-block",
               color: "rgb(31 41 55)",
@@ -498,10 +498,10 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           isLoaded && openSection === 2 ? "visible" : "invisible"
-        } flex absolute top-0 left-0  z-[1000] snap-always snap-start w-full h-screen flex-col justify-center items-center overflow-hidden bg-[#1fb9bb]`}
+        } flex absolute top-0 left-0  z-[1000] snap-always snap-start w-full h-[100ssvh] flex-col justify-center items-center overflow-hidden bg-[#1fb9bb]`}
       >
         <button
-          className="absolute md:h-[6vh] md:w-[6vh] md:top-[5vh] md:right-[5vh]  fill-white h-[4.4vh] w-[4.4vh] top-[4vh] right-[4vh] cursor-pointer z-[100000]"
+          className="absolute md:h-[6svh] md:w-[6svh] md:top-[5svh] md:right-[5svh]  fill-white h-[4.4svh] w-[4.4svh] top-[4svh] right-[4svh] cursor-pointer z-[100000]"
           onClick={() => setOpenSection(0)}
         >
           <svg
@@ -515,15 +515,15 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           </svg>
         </button>
         <div className="flex items-center flex-col md:flex-row justify-center ">
-          <div className="text-white text-[2.4vh] md:text-[2.8vh] md:translate-x-0 md:w-[25vh] md:text-right">
+          <div className="text-white text-[2.4svh] md:text-[2.8svh] md:translate-x-0 md:w-[25svh] md:text-right">
             I aspire to be
           </div>
-          <div className=" flex justify-center mx-4 w-[32vh]  md:translate-x-0">
+          <div className=" flex justify-center mx-4 w-[32svh]  md:translate-x-0">
             <TypeAnimation
               sequence={["Artsy✨", 3000, "Techy🤖", 3000, "Brandy🥂", 3000]}
               wrapper="i"
               speed={50}
-              className="font-serif text-gray-100 text-[3.9vh] md:text-[5vh]"
+              className="font-serif text-gray-100 text-[3.9svh] md:text-[5svh]"
               style={{
                 display: "inline-block",
                 // color: "rgb(31 41 55)",
@@ -534,7 +534,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             />
           </div>
 
-          <div className="text-white text-[2.4vh] md:text-[2.8vh]  md:translate-x-[-2vh] md:w-[25vh]  ">
+          <div className="text-white text-[2.4svh] md:text-[2.8svh]  md:translate-x-[-2svh] md:w-[25svh]  ">
             and I have proofs.
           </div>
         </div>
@@ -542,122 +542,122 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
         <div
           ref={portfolioRef}
           id={"portfolio"}
-          className="flex mt-[3vh] w-[100vw] overflow-x-scroll pl-[15%] pr-[5%] md:pr-[8%] scroll-smooth pb-[4vh] mb-[4vh]"
+          className="flex mt-[3svh] w-[100vw] overflow-x-scroll pl-[15%] pr-[5%] md:pr-[8%] scroll-smooth pb-[4svh] mb-[4svh]"
         >
-          <div className=" rotate-[-90deg] h-[10vh] md:h-[15vh] w-0 translate-y-[36vh] md:translate-y-[39vh] text-white text-bold text-[2.7vh] md:text-[3.3vh]">
+          <div className=" rotate-[-90deg] h-[10svh] md:h-[15svh] w-0 translate-y-[36svh] md:translate-y-[39svh] text-white text-bold text-[2.7svh] md:text-[3.3svh]">
             Product<span className="text-[#1fb9bb]">o</span>Development
           </div>
           <div
-            className="flex flex-col bg-[#1f4846] rounded-[3vh] overflow-hidden h-[53vh] md:h-[57vh] min-w-[39vh] md:min-w-[42vh]  md:max-w-[90vw] mr-[2.4vh] cursor-pointer relative "
+            className="flex flex-col bg-[#1f4846] rounded-[3svh] overflow-hidden h-[53svh] md:h-[57svh] min-w-[39svh] md:min-w-[42svh]  md:max-w-[90vw] mr-[2.4svh] cursor-pointer relative "
             onClick={() => setOpenModal(1)}
           >
-            <div className="text-gray-100 p-[2.6vh] z-10 ">
-              <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <div className="text-gray-100 p-[2.6svh] z-10 ">
+              <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
                 Nongki!
               </b>
 
-              <span className="text-[2.2vh] md:text-[2.4vh]">
+              <span className="text-[2.2svh] md:text-[2.4svh]">
                 <br />
                 Social Game Database
               </span>
-              <div className="flex flex-wrap mt-[1.6vh]">
-                <div className="bg-[#bd3229] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="flex flex-wrap mt-[1.6svh]">
+                <div className="bg-[#bd3229] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Product Manager
                 </div>
-                <div className="bg-[#4275db] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+                <div className="bg-[#4275db] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Creative Director
                 </div>
-                <div className="bg-[#e4bf4b] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mt-[.8vh] ">
+                <div className="bg-[#e4bf4b] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mt-[.8svh] ">
                   Front End Developer
                 </div>
               </div>
             </div>
-            <div className=" w-[100%] h-[100%] absolute bottom-[-4.5vh]">
+            <div className=" w-[100%] h-[100%] absolute bottom-[-4.5svh]">
               <Image src={Nongki} fill style={{ objectFit: "contain" }} />
             </div>
           </div>
           <div
             onClick={() => setOpenModal(2)}
-            className=" bg-gradient-to-br from-sky-600 to-blue-700 shadow flex flex-col rounded-[3vh] overflow-hidden h-[53vh] md:h-[57vh] min-w-[39vh] md:min-w-[42vh]  md:max-w-[90vw] mr-[2.4vh] cursor-pointer relative "
+            className=" bg-gradient-to-br from-sky-600 to-blue-700 shadow flex flex-col rounded-[3svh] overflow-hidden h-[53svh] md:h-[57svh] min-w-[39svh] md:min-w-[42svh]  md:max-w-[90vw] mr-[2.4svh] cursor-pointer relative "
           >
-            <div className="text-gray-100 p-[2.6vh] z-10 ">
-              <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <div className="text-gray-100 p-[2.6svh] z-10 ">
+              <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
                 Sisva
               </b>
 
-              <span className="text-[2.2vh] md:text-[2.4vh]">
+              <span className="text-[2.2svh] md:text-[2.4svh]">
                 <br />
                 School Digitalization
               </span>
-              <div className="flex flex-wrap mt-[1.8vh]">
-                <div className="bg-[#F96756] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="flex flex-wrap mt-[1.8svh]">
+                <div className="bg-[#F96756] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Product Manager
                 </div>
-                <div className="bg-[#7F41CE] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+                <div className="bg-[#7F41CE] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Creative Director
                 </div>
-                <div className="bg-[#00AC96] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-[.8vh] ">
+                <div className="bg-[#00AC96] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh] ">
                   Front End Developer
                 </div>
-                <div className="bg-[#F79F1C] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-[.8vh] ">
+                <div className="bg-[#F79F1C] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh] ">
                   UI/UX Design
                 </div>
               </div>
             </div>
-            <div className=" w-[100%] h-[100%] absolute bottom-[-7.2vh]">
+            <div className=" w-[100%] h-[100%] absolute bottom-[-7.2svh]">
               <Image src={Sisva} fill style={{ objectFit: "contain" }} />
             </div>
           </div>
           <div
             onClick={() => setOpenModal(3)}
-            className="flex flex-col bg-[#3d2561]  rounded-[3vh] overflow-hidden h-[53vh] md:h-[57vh] min-w-[39vh] md:min-w-[42vh]  md:max-w-[90vw] mr-[2.4vh] cursor-pointer relative"
+            className="flex flex-col bg-[#3d2561]  rounded-[3svh] overflow-hidden h-[53svh] md:h-[57svh] min-w-[39svh] md:min-w-[42svh]  md:max-w-[90vw] mr-[2.4svh] cursor-pointer relative"
           >
-            <div className="text-gray-100 p-[2.6vh] z-10 ">
-              <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <div className="text-gray-100 p-[2.6svh] z-10 ">
+              <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
                 Rayain
               </b>
 
-              <span className="text-[2.2vh] md:text-[2.4vh]">
+              <span className="text-[2.2svh] md:text-[2.4svh]">
                 <br />
                 Digital Greeting Card
               </span>
-              <div className="flex flex-wrap mt-[1.8vh]">
-                <div className="bg-[#5977f1] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="flex flex-wrap mt-[1.8svh]">
+                <div className="bg-[#5977f1] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Product Manager
                 </div>
-                <div className="bg-[#4eac5e] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+                <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Creative Director
                 </div>
-                <div className="bg-[#de556a] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-[.8vh] ">
+                <div className="bg-[#de556a] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh] ">
                   Front End Developer
                 </div>
-                <div className="bg-[#7b32ec] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-[.8vh] ">
+                <div className="bg-[#7b32ec] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh] ">
                   UI/UX Design
                 </div>
               </div>
             </div>
-            <div className=" w-[100%] h-[100%] absolute bottom-[-7.5vh]">
+            <div className=" w-[100%] h-[100%] absolute bottom-[-7.5svh]">
               <Image src={Rayain} fill style={{ objectFit: "contain" }} />
             </div>
           </div>
-          <div className="  rotate-[-90deg] h-[10vh] md:h-[15vh] w-0 translate-y-[36vh] md:translate-y-[39vh] text-white text-bold text-[2.7vh] md:text-[3.3vh] ml-[6vh] md:ml-[10vh]">
+          <div className="  rotate-[-90deg] h-[10svh] md:h-[15svh] w-0 translate-y-[36svh] md:translate-y-[39svh] text-white text-bold text-[2.7svh] md:text-[3.3svh] ml-[6svh] md:ml-[10svh]">
             Creative<span className="text-[#1fb9bb]">o</span>Technology
           </div>
           <div
             onClick={() => setOpenModal(4)}
-            className="  flex flex-col bg-[#04041c]  rounded-[3vh] overflow-hidden h-[53vh] md:h-[57vh] min-w-[39vh] md:min-w-[42vh]  md:max-w-[90vw] mr-[2.4vh] cursor-pointer relative "
+            className="  flex flex-col bg-[#04041c]  rounded-[3svh] overflow-hidden h-[53svh] md:h-[57svh] min-w-[39svh] md:min-w-[42svh]  md:max-w-[90vw] mr-[2.4svh] cursor-pointer relative "
           >
-            <div className="text-gray-100 p-[2.6vh] bg-gradient-to-b from-[#04041c] from-65% to-transparent  h-[50%] w-[100%] absolute top-0 z-20">
-              <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <div className="text-gray-100 p-[2.6svh] bg-gradient-to-b from-[#04041c] from-65% to-transparent  h-[50%] w-[100%] absolute top-0 z-20">
+              <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
                 SENSORIA
               </b>
 
-              <span className="text-[2.2vh] md:text-[2.4vh]">
+              <span className="text-[2.2svh] md:text-[2.4svh]">
                 <br />
                 Light Installation
               </span>
-              <div className="flex flex-wrap mt-[1.8vh]">
-                <div className="bg-[#4eac5e] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="flex flex-wrap mt-[1.8svh]">
+                <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Creative Director
                 </div>
               </div>
@@ -669,19 +669,19 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
 
           <div
             onClick={() => setOpenModal(5)}
-            className="  flex flex-col bg-[#85b9c2]  rounded-[3vh] overflow-hidden h-[53vh] md:h-[57vh] min-w-[39vh] md:min-w-[42vh]  md:max-w-[90vw] mr-[2.4vh] cursor-pointer relative "
+            className="  flex flex-col bg-[#85b9c2]  rounded-[3svh] overflow-hidden h-[53svh] md:h-[57svh] min-w-[39svh] md:min-w-[42svh]  md:max-w-[90vw] mr-[2.4svh] cursor-pointer relative "
           >
-            <div className="text-gray-100 p-[2.6vh] bg-gradient-to-b from-[#85b9c2] from-65% to-transparent  h-[50%] w-[100%] absolute top-0 z-20">
-              <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <div className="text-gray-100 p-[2.6svh] bg-gradient-to-b from-[#85b9c2] from-65% to-transparent  h-[50%] w-[100%] absolute top-0 z-20">
+              <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
                 Perfect Liar
               </b>
 
-              <span className="text-[2.2vh] md:text-[2.4vh]">
+              <span className="text-[2.2svh] md:text-[2.4svh]">
                 <br />
                 Extended Reality
               </span>
-              <div className="flex flex-wrap mt-[1.8vh]">
-                <div className="bg-[#b5a468] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="flex flex-wrap mt-[1.8svh]">
+                <div className="bg-[#b5a468] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   XR Engineer
                 </div>
               </div>
@@ -693,19 +693,19 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
 
           <div
             onClick={() => setOpenModal(6)}
-            className="  flex flex-col bg-[#b42f2e]  rounded-[3vh] overflow-hidden h-[53vh] md:h-[57vh] min-w-[39vh] md:min-w-[42vh]  md:max-w-[90vw] mr-[2.4vh] cursor-pointer relative "
+            className="  flex flex-col bg-[#b42f2e]  rounded-[3svh] overflow-hidden h-[53svh] md:h-[57svh] min-w-[39svh] md:min-w-[42svh]  md:max-w-[90vw] mr-[2.4svh] cursor-pointer relative "
           >
-            <div className="text-gray-100 p-[2.6vh] bg-gradient-to-b from-[#b42f2e] from-70% to-transparent  h-[45%] w-[100%] absolute top-0 z-20">
-              <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <div className="text-gray-100 p-[2.6svh] bg-gradient-to-b from-[#b42f2e] from-70% to-transparent  h-[45%] w-[100%] absolute top-0 z-20">
+              <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
                 Murder by Stage
               </b>
 
-              <span className="text-[2.2vh] md:text-[2.4vh]">
+              <span className="text-[2.2svh] md:text-[2.4svh]">
                 <br />
                 Festival Teater Jakarta
               </span>
-              <div className="flex flex-wrap mt-[1.8vh]">
-                <div className="bg-[#0e0b07] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="flex flex-wrap mt-[1.8svh]">
+                <div className="bg-[#0e0b07] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Multimedia Design
                 </div>
               </div>
@@ -716,22 +716,22 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           </div>
           <div
             onClick={() => setOpenModal(7)}
-            className="flex flex-col  bg-gradient-to-t from-[#deafb1] from-60% to-[#e1a1a3]   rounded-[3vh] overflow-hidden h-[53vh] md:h-[57vh] min-w-[39vh] md:min-w-[42vh]  md:max-w-[90vw] mr-[2.4vh] cursor-pointer relative "
+            className="flex flex-col  bg-gradient-to-t from-[#deafb1] from-60% to-[#e1a1a3]   rounded-[3svh] overflow-hidden h-[53svh] md:h-[57svh] min-w-[39svh] md:min-w-[42svh]  md:max-w-[90vw] mr-[2.4svh] cursor-pointer relative "
           >
-            <div className="text-gray-100 p-[2.6vh] z-10 ">
-              <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <div className="text-gray-100 p-[2.6svh] z-10 ">
+              <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
                 Saling Sulam
               </b>
 
-              <span className="text-[2.2vh] md:text-[2.4vh]">
+              <span className="text-[2.2svh] md:text-[2.4svh]">
                 <br />
                 Multiuser Augmented Reality
               </span>
-              <div className="flex flex-wrap mt-[1.8vh]">
-                <div className="bg-[#7f3b44] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="flex flex-wrap mt-[1.8svh]">
+                <div className="bg-[#7f3b44] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Creative Director
                 </div>
-                <div className="bg-[#558f89] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold ">
+                <div className="bg-[#558f89] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold ">
                   Full Stack Developer
                 </div>
               </div>
@@ -740,29 +740,29 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               <Image src={SalingSulam} fill style={{ objectFit: "contain" }} />
             </div>
           </div>
-          <div className="  rotate-[-90deg] h-[10vh] md:h-[15vh] w-0 translate-y-[29vh] md:translate-y-[31vh] text-white text-bold text-[2.7vh] md:text-[3.3vh] ml-[6vh] md:ml-[10vh]">
+          <div className="  rotate-[-90deg] h-[10svh] md:h-[15svh] w-0 translate-y-[29svh] md:translate-y-[31svh] text-white text-bold text-[2.7svh] md:text-[3.3svh] ml-[6svh] md:ml-[10svh]">
             Art<span className="text-[#1fb9bb]">o</span>Projects
           </div>
 
           <div
             onClick={() => setOpenModal(8)}
-            className="  flex flex-col bg-[#84765b]  rounded-[3vh] overflow-hidden h-[53vh] md:h-[57vh] min-w-[39vh] md:min-w-[42vh]  md:max-w-[90vw] mr-[2.4vh] cursor-pointer relative "
+            className="  flex flex-col bg-[#84765b]  rounded-[3svh] overflow-hidden h-[53svh] md:h-[57svh] min-w-[39svh] md:min-w-[42svh]  md:max-w-[90vw] mr-[2.4svh] cursor-pointer relative "
           >
-            <div className="text-gray-100 p-[2.6vh] bg-gradient-to-b from-[#84765b] from-65% to-transparent  h-[50%] w-[100%] absolute top-0 z-20">
-              <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <div className="text-gray-100 p-[2.6svh] bg-gradient-to-b from-[#84765b] from-65% to-transparent  h-[50%] w-[100%] absolute top-0 z-20">
+              <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
                 {" "}
                 Areza Nirmala
               </b>
 
-              <span className="text-[2.2vh] md:text-[2.4vh]">
+              <span className="text-[2.2svh] md:text-[2.4svh]">
                 <br />
                 Music EP
               </span>
-              <div className="flex flex-wrap mt-[1.8vh]">
-                <div className="bg-[#4eac5e] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="flex flex-wrap mt-[1.8svh]">
+                <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Singer-Songwriter
                 </div>
-                <div className="bg-[#56432c] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+                <div className="bg-[#56432c] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Creative Director
                 </div>
               </div>
@@ -771,26 +771,26 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               <Image src={ArezaNirmala} fill style={{ objectFit: "cover" }} />
             </div>
           </div>
-          <div className="  rotate-[-90deg] h-[10vh] md:h-[15vh] w-0 translate-y-[33vh] md:translate-y-[37vh] text-white text-bold text-[2.7vh] md:text-[3.3vh] ml-[6vh] md:ml-[10vh]">
+          <div className="  rotate-[-90deg] h-[10svh] md:h-[15svh] w-0 translate-y-[33svh] md:translate-y-[37svh] text-white text-bold text-[2.7svh] md:text-[3.3svh] ml-[6svh] md:ml-[10svh]">
             Voluntary<span className="text-[#1fb9bb]">o</span>Activities
           </div>
 
           <div
             onClick={() => setOpenModal(9)}
-            className="  flex flex-col bg-[#8cb1cc]  rounded-[3vh] overflow-hidden h-[53vh] md:h-[57vh] min-w-[39vh] md:min-w-[42vh]  md:max-w-[90vw] cursor-pointer relative"
+            className="  flex flex-col bg-[#8cb1cc]  rounded-[3svh] overflow-hidden h-[53svh] md:h-[57svh] min-w-[39svh] md:min-w-[42svh]  md:max-w-[90vw] cursor-pointer relative"
           >
-            <div className="text-gray-100 p-[2.6vh] bg-gradient-to-b from-[#8cb1cc] from-65% to-transparent  h-[55%] w-[100%] absolute top-0 z-20">
-              <b className="text-[3.1vh] md:text-[3.4vh] h-['fit-content']">
+            <div className="text-gray-100 p-[2.6svh] bg-gradient-to-b from-[#8cb1cc] from-65% to-transparent  h-[55%] w-[100%] absolute top-0 z-20">
+              <b className="text-[3.1svh] md:text-[3.4svh] h-['fit-content']">
                 {" "}
                 Safe Space Indonesia
               </b>
 
-              <span className="text-[2.2vh] md:text-[2.4vh]">
+              <span className="text-[2.2svh] md:text-[2.4svh]">
                 <br />
                 Spoken Word Art Platform
               </span>
-              <div className="flex flex-wrap mt-[1.8vh]">
-                <div className="bg-[#91787b] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="flex flex-wrap mt-[1.8svh]">
+                <div className="bg-[#91787b] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                   Core Team Member
                 </div>
               </div>
@@ -805,42 +805,42 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           openModal === 0 ? "hidden" : ""
-        } absolute top-0 left-0 h-screen w-screen`}
+        } absolute top-0 left-0 h-[100ssvh] w-screen`}
       >
         <div
-          className=" absolute h-screen w-screen bg-[rgb(0,0,0,0.5)] top-0 left-0 z-[10000] cursor-pointer"
+          className=" absolute h-[100ssvh] w-screen bg-[rgb(0,0,0,0.5)] top-0 left-0 z-[10000] cursor-pointer"
           onClick={() => setOpenModal(0)}
         ></div>
         <div
-          className={`absolute bottom-0 md:right-0 w-[100vw] md:w-[80vh] md:max-w-[85vw] ${
+          className={`absolute bottom-0 md:right-0 w-[100vw] md:w-[80svh] md:max-w-[85vw] ${
             modalContents[openModal - 1]?.color
-          } h-[80vh] md:h-screen rounded-t-[5vh] md:rounded-l-[5vh] md:rounded-tr-none z-[10010] overflow-hidden`}
+          } h-[80svh] md:h-[100ssvh] rounded-t-[5svh] md:rounded-l-[5svh] md:rounded-tr-none z-[10010] overflow-hidden`}
         >
           <div
             className={`${
               openModal === 1 ? "" : "hidden"
-            } text-gray-100 p-[3vh] md:p-[3.3vh] absolute top-0 left-0 z-[10020] flex flex-col`}
+            } text-gray-100 p-[3svh] md:p-[3.3svh] absolute top-0 left-0 z-[10020] flex flex-col`}
           >
-            <b className="text-[3.4vh] md:text-[3.6vh]  h-['fit-content']">
+            <b className="text-[3.4svh] md:text-[3.6svh]  h-['fit-content']">
               Nongki!
             </b>
 
-            <span className="text-[2.2vh] md:text-[2.4vh]">
+            <span className="text-[2.2svh] md:text-[2.4svh]">
               Social Game Database
             </span>
             <div className="flex flex-wrap mt-2">
-              <div className="bg-[#bd3229] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-[.8vh]">
+              <div className="bg-[#bd3229] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                 Product Manager
               </div>
-              <div className="bg-[#4275db] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-[.8vh]">
+              <div className="bg-[#4275db] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                 Creative Director
               </div>
-              <div className="bg-[#e4bf4b] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mt-[.8vh]">
+              <div className="bg-[#e4bf4b] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mt-[.8svh]">
                 Front End Developer
               </div>
             </div>
 
-            <p className="mt-[3vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[3svh] text-[2svh] md:text-[2.2svh]">
               <b>Nongki!</b> is a platform dedicated to social games, where
               players can explore games across various genres. Beyond a mere
               game repository, Nongki! serves as a vibrant social space where
@@ -848,13 +848,13 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               captivating social experiences.
             </p>
 
-            <p className="mt-[1vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[1svh] text-[2svh] md:text-[2.2svh]">
               In this project, we aim to push the boundaries of traditional
               website design methods.
             </p>
 
             <a href="https://nongki.space">
-              <button className="bg-[#4E5AEA] hover:bg-[#3E4ADA] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[1.6vh] font-bold">
+              <button className="bg-[#4E5AEA] hover:bg-[#3E4ADA] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 Visit Nongki!
               </button>
             </a>
@@ -863,31 +863,31 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 2 ? "" : "hidden"
-            } text-gray-100 p-[3vh] md:p-[3.3vh] absolute top-0 left-0 z-[10020] flex flex-col`}
+            } text-gray-100 p-[3svh] md:p-[3.3svh] absolute top-0 left-0 z-[10020] flex flex-col`}
           >
-            <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
               Sisva
             </b>
 
-            <span className="text-[2.2vh] md:text-[2.4vh]">
+            <span className="text-[2.2svh] md:text-[2.4svh]">
               School Digitalization
             </span>
             <div className="flex flex-wrap mt-2">
-              <div className="bg-[#F96756] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-2">
+              <div className="bg-[#F96756] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-2">
                 Product Manager
               </div>
-              <div className="bg-[#7F41CE] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-2">
+              <div className="bg-[#7F41CE] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-2">
                 Creative Director
               </div>
-              <div className="bg-[#00AC96] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]  mt-2">
+              <div className="bg-[#00AC96] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]  mt-2">
                 Front End Developer
               </div>
-              <div className="bg-[#F79F1C] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold  mt-2">
+              <div className="bg-[#F79F1C] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold  mt-2">
                 UI/UX Design
               </div>
             </div>
 
-            <p className="mt-[3vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[3svh] text-[2svh] md:text-[2.2svh]">
               <b>Sisva</b> is a SaaS EdTech platform revolutionizing educational
               systems by streamlining school operations and digitizing every
               aspect of the academic experience. With a dedicated mission to
@@ -898,7 +898,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             </p>
 
             <a href="https://sisva.id">
-              <button className="bg-[#ee462b] hover:bg-[#de361b] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[1.6vh] font-bold">
+              <button className="bg-[#ee462b] hover:bg-[#de361b] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 Visit Sisva
               </button>
             </a>
@@ -907,31 +907,31 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 3 ? "" : "hidden"
-            } text-gray-100 p-[3vh] md:p-[3.3vh] absolute top-0 left-0 z-[10020] flex flex-col`}
+            } text-gray-100 p-[3svh] md:p-[3.3svh] absolute top-0 left-0 z-[10020] flex flex-col`}
           >
-            <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
               Rayain
             </b>
 
-            <span className="text-[2.2vh] md:text-[2.4vh]">
+            <span className="text-[2.2svh] md:text-[2.4svh]">
               Digital Greeting Card
             </span>
             <div className="flex flex-wrap mt-2">
-              <div className="bg-[#5977f1] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-2">
+              <div className="bg-[#5977f1] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-2">
                 Product Manager
               </div>
-              <div className="bg-[#4eac5e] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-2">
+              <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-2">
                 Creative Director
               </div>
-              <div className="bg-[#de556a] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh] mt-2 ">
+              <div className="bg-[#de556a] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-2 ">
                 Front End Developer
               </div>
-              <div className="bg-[#7b32ec] w-[fit-content]  p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mt-2 ">
+              <div className="bg-[#7b32ec] w-[fit-content]  p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mt-2 ">
                 UI/UX Design
               </div>
             </div>
 
-            <p className="mt-[3vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[3svh] text-[2svh] md:text-[2.2svh]">
               <b>Rayain</b> is a modern digital greeting card platform designed
               to infuse special moments with heartfelt celebrations. With its
               innovative approach, Rayain offers a seamless way to mark
@@ -941,7 +941,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             </p>
 
             <a href="https://rayain.id">
-              <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[1.6vh] font-bold">
+              <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 Visit Rayain
               </button>
             </a>
@@ -950,22 +950,22 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 4 ? "" : "hidden"
-            } text-gray-100 p-[3vh] md:p-[3.3vh] absolute top-0 left-0 z-[10020] flex flex-col`}
+            } text-gray-100 p-[3svh] md:p-[3.3svh] absolute top-0 left-0 z-[10020] flex flex-col`}
           >
-            <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
               SENSORIA
             </b>
 
-            <span className="text-[2.2vh] md:text-[2.4vh]">
+            <span className="text-[2.2svh] md:text-[2.4svh]">
               Light Installation
             </span>
-            <div className="flex flex-wrap mt-[1.8vh]">
-              <div className="bg-[#4eac5e] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+            <div className="flex flex-wrap mt-[1.8svh]">
+              <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                 Creative Director
               </div>
             </div>
 
-            <p className="mt-[3vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[3svh] text-[2svh] md:text-[2.2svh]">
               <b>SENSORIA</b> is an immersive workshop curated by Goethe
               Institut Indonesia, where participants delve into the world of
               lighting installations guided by renowned experts Convert Textured
@@ -974,13 +974,13 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               immersive spaces through scenography.
             </p>
 
-            <p className="mt-[1vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[1svh] text-[2svh] md:text-[2.2svh]">
               In the workshop that was organized from June-September 2023, Bimo
               Arsa was part of the Light Installation team.
             </p>
 
             <a href="https://www.goethe.de/ins/id/id/ver.cfm?event_id=24974490">
-              <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[1.6vh] font-bold">
+              <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 View Article
               </button>
             </a>
@@ -989,22 +989,22 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 5 ? "" : "hidden"
-            } text-gray-100 p-[3vh] md:p-[3.3vh] absolute top-0 left-0 z-[10020] flex flex-col`}
+            } text-gray-100 p-[3svh] md:p-[3.3svh] absolute top-0 left-0 z-[10020] flex flex-col`}
           >
-            <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
               Perfect Liar
             </b>
 
-            <span className="text-[2.2vh] md:text-[2.4vh]">
+            <span className="text-[2.2svh] md:text-[2.4svh]">
               Extended Reality
             </span>
-            <div className="flex flex-wrap mt-[1.8vh]">
-              <div className="bg-[#b5a468] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+            <div className="flex flex-wrap mt-[1.8svh]">
+              <div className="bg-[#b5a468] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                 XR Engineer
               </div>
             </div>
 
-            <p className="mt-[3vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[3svh] text-[2svh] md:text-[2.2svh]">
               <b>Perfect Liar</b> is a sensational single by Putri Ariani, the
               Indonesian prodigy who astounded audiences with her remarkable
               performance on America's Got Talent. With haunting melodies and
@@ -1013,14 +1013,14 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               connect deeply through her music.
             </p>
 
-            <p className="mt-[1vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[1svh] text-[2svh] md:text-[2.2svh]">
               In the creation of the Music Video, Bimo Arsa was part of XR
               Engineer team who are responsible for planning and operating the
               cutting-edge technology.
             </p>
 
             <a href="https://www.youtube.com/watch?v=-K6nfNuImOc">
-              <button className="bg-[#b5a468] hover:bg-[#a59458] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[1.6vh] font-bold">
+              <button className="bg-[#b5a468] hover:bg-[#a59458] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 Watch Perfect Liar
               </button>
             </a>
@@ -1029,22 +1029,22 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 6 ? "" : "hidden"
-            } text-gray-100 p-[3vh] md:p-[3.3vh] absolute top-0 left-0 z-[10020] flex flex-col`}
+            } text-gray-100 p-[3svh] md:p-[3.3svh] absolute top-0 left-0 z-[10020] flex flex-col`}
           >
-            <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
               Murder by Stage
             </b>
 
-            <span className="text-[2.2vh] md:text-[2.4vh]">
+            <span className="text-[2.2svh] md:text-[2.4svh]">
               Extended Reality
             </span>
-            <div className="flex flex-wrap mt-[1.8vh]">
-              <div className="bg-[#000000] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+            <div className="flex flex-wrap mt-[1.8svh]">
+              <div className="bg-[#000000] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                 Multimedia Design
               </div>
             </div>
 
-            <p className="mt-[3vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[3svh] text-[2svh] md:text-[2.2svh]">
               <b>Murder by Stage: A Killing Enigma</b> is an enthralling theatre
               piece by Teater Asa, eligible for performance at the illustrious
               Festival Teater Jakarta, a pinnacle in Indonesia's theater
@@ -1054,13 +1054,13 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               accolades.
             </p>
 
-            <p className="mt-[1vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[1svh] text-[2svh] md:text-[2.2svh]">
               In this production, Bimo Arsa took part as Multimedia Design to
               create a way of story-telling that triggers wonder.
             </p>
 
             <a href="https://www.instagram.com/p/Cy2YzlxyZQ_/?next=%2Fp%2FB9Q6c9OHMxT%2F&hl=ne">
-              <button className="bg-[#000000] hover:bg-[#202020] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[1.6vh] font-bold">
+              <button className="bg-[#000000] hover:bg-[#202020] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 View Official Documentation
               </button>
             </a>
@@ -1069,26 +1069,26 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 7 ? "" : "hidden"
-            } text-gray-100 p-[3vh] md:p-[3.3vh] absolute top-0 left-0 z-[10020] flex flex-col`}
+            } text-gray-100 p-[3svh] md:p-[3.3svh] absolute top-0 left-0 z-[10020] flex flex-col`}
           >
-            <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
               Saling Sulam
             </b>
 
-            <span className="text-[2.2vh] md:text-[2.4vh]">
+            <span className="text-[2.2svh] md:text-[2.4svh]">
               Multiuser Augmented Reality
             </span>
 
-            <div className="flex flex-wrap mt-[1.8vh]">
-              <div className="bg-[#7f3b44] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+            <div className="flex flex-wrap mt-[1.8svh]">
+              <div className="bg-[#7f3b44] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                 Creative Director
               </div>
-              <div className="bg-[#558f89] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold ">
+              <div className="bg-[#558f89] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold ">
                 Full Stack Developer
               </div>
             </div>
 
-            <p className="mt-[3vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[3svh] text-[2svh] md:text-[2.2svh]">
               <b>Saling Sulam</b> is an innovative exhibit crafted by no:rue for
               Ourchetype Exhibition held in December 2023 - January 2024, Using
               a novel approach to multiuser Augmented Reality, visitors are
@@ -1099,12 +1099,12 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
 
             <div className="flex flex-col md:flex-row">
               <a href="https://salingsulam.zetvi.es">
-                <button className="bg-[#7f3b44] hover:bg-[#6f2b34] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[1.6vh] font-bold">
+                <button className="bg-[#7f3b44] hover:bg-[#6f2b34] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                   Visit Saling Sulam
                 </button>
               </a>
               <a href="https://www.instagram.com/ourchetype/">
-                <button className="bg-[#558f89] hover:bg-[#457f79] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[.8vh] font-bold">
+                <button className="bg-[#558f89] hover:bg-[#457f79] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[.8svh] font-bold">
                   Visit Ourchetype
                 </button>
               </a>
@@ -1114,28 +1114,28 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 8 ? "" : "hidden"
-            } text-gray-100 p-[3vh] md:p-[3.3vh] absolute top-0 left-0 z-[10020] flex flex-col`}
+            } text-gray-100 p-[3svh] md:p-[3.3svh] absolute top-0 left-0 z-[10020] flex flex-col`}
           >
-            <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
               Areza Nirmala
             </b>
 
-            <span className="text-[2.2vh] md:text-[2.4vh]">Music EP</span>
+            <span className="text-[2.2svh] md:text-[2.4svh]">Music EP</span>
 
-            <div className="flex flex-wrap mt-[1.8vh]">
-              <div className="bg-[#4eac5e] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+            <div className="flex flex-wrap mt-[1.8svh]">
+              <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                 Singer-Songwriter
               </div>
-              <div className="bg-[#56432c] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+              <div className="bg-[#56432c] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                 Creative Director
               </div>
             </div>
 
-            <p className="mt-[3vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[3svh] text-[2svh] md:text-[2.2svh]">
               <b>Areza Nirmala</b> is a story about encounters, farewells, and
               everything that happens in between.
             </p>
-            <p className="mt-[1vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[1svh] text-[2svh] md:text-[2.2svh]">
               This project was initiated by Bimo Arsa and Nissa Annabiilah, and
               given life by Eky Rizkani through the magical arrangements he
               crafted. Comprising five songs that chronologically narrate in
@@ -1146,7 +1146,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
 
             <div className="flex">
               <a href="https://www.youtube.com/watch?v=hw-1M0Gacn0&pp=ygUNYXJlemEgbmlybWFsYQ%3D%3D">
-                <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[1.6vh] font-bold">
+                <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                   Explore Areza Nirmala
                 </button>
               </a>
@@ -1156,27 +1156,27 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 9 ? "" : "hidden"
-            } text-gray-100 p-[3vh] md:p-[3.3vh] absolute top-0 left-0 z-[10020] flex flex-col`}
+            } text-gray-100 p-[3svh] md:p-[3.3svh] absolute top-0 left-0 z-[10020] flex flex-col`}
           >
-            <b className="text-[3.4vh] md:text-[3.6vh] h-['fit-content']">
+            <b className="text-[3.4svh] md:text-[3.6svh] h-['fit-content']">
               Safe Space Indonesia
             </b>
 
-            <span className="text-[2.2vh] md:text-[2.4vh]">
+            <span className="text-[2.2svh] md:text-[2.4svh]">
               Spoken Word Art Platform
             </span>
 
-            <div className="flex flex-wrap mt-[1.8vh]">
-              <div className="bg-[#91787b] w-[fit-content] p-[.5vh] px-[1vh] text-[1.6vh] md:text-[1.7vh] rounded font-bold mr-[.8vh]">
+            <div className="flex flex-wrap mt-[1.8svh]">
+              <div className="bg-[#91787b] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
                 Core Team Member
               </div>
             </div>
 
-            <p className="mt-[3vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[3svh] text-[2svh] md:text-[2.2svh]">
               <b>Safe Space Indonesia</b> is an Indonesia-based home of
               storytellers, lyricists, spoken word poets, and more.
             </p>
-            <p className="mt-[1vh] text-[2vh] md:text-[2.2vh]">
+            <p className="mt-[1svh] text-[2svh] md:text-[2.2svh]">
               We are building a non-judgmental, secure haven for creative
               expression, inviting individuals from every walk of life to freely
               share their voices. At our core, we hold the firm belief that
@@ -1186,7 +1186,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
 
             <div className="flex">
               <a href="https://safespaceindo.com/">
-                <button className="bg-[#91787b] hover:bg-[#81686b] text-[2vh] md:text-[2.2vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh] mt-[1.6vh] font-bold">
+                <button className="bg-[#91787b] hover:bg-[#81686b] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                   Visit Safe Space Indonesia
                 </button>
               </a>
@@ -1196,7 +1196,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 1 ? "md:flex" : ""
-            } hidden  w-[100%] h-[70%] absolute bottom-[-5vh] z-1 `}
+            } hidden  w-[100%] h-[70%] absolute bottom-[-5svh] z-1 `}
           >
             <Image src={Nongki} fill style={{ objectFit: "cover" }} />
           </div>
@@ -1204,7 +1204,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 2 ? "md:flex" : ""
-            } hidden w-[100%] h-[70%] absolute bottom-[-4vh] z-1 `}
+            } hidden w-[100%] h-[70%] absolute bottom-[-4svh] z-1 `}
           >
             <Image src={Sisva} fill style={{ objectFit: "contain" }} />
           </div>
@@ -1212,7 +1212,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 3 ? "md:flex" : ""
-            } hidden w-[80%] h-[60%] right-0 absolute bottom-[-3vh] z-1`}
+            } hidden w-[80%] h-[60%] right-0 absolute bottom-[-3svh] z-1`}
           >
             <Image src={Rayain} fill style={{ objectFit: "contain" }} />
           </div>
@@ -1220,7 +1220,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 4 ? "md:flex" : ""
-            } hidden flex-col bg-[#04041c] rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+            } hidden flex-col bg-[#04041c] rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#04041c] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[45%] absolute bottom-0">
@@ -1231,7 +1231,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 5 ? "md:flex" : ""
-            } hidden flex-col  rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#85b9c2] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[45%] absolute bottom-0">
@@ -1242,7 +1242,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 6 ? "md:flex" : ""
-            } hidden flex-col  rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#b42f2e] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[55%] absolute bottom-0">
@@ -1253,7 +1253,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={`${
               openModal === 7 ? "md:flex" : ""
-            } hidden w-[100%] h-[40%] absolute bottom-[1.5vh] z-1`}
+            } hidden w-[100%] h-[40%] absolute bottom-[1.5svh] z-1`}
           >
             <Image src={SalingSulam} fill style={{ objectFit: "contain" }} />
           </div>
@@ -1261,7 +1261,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 8 ? "md:flex" : ""
-            } hidden flex-col  rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#84765b] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[55%] absolute bottom-0">
@@ -1271,7 +1271,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 9 ? "md:flex" : ""
-            } hidden flex-col  rounded-[3vh] overflow-hidden h-screen w-[100%] cursor-pointer relative `}
+            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#8cb1cc] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[55%] absolute bottom-0">
@@ -1319,29 +1319,29 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             <Image
               src={Disk}
               alt="Disk"
-              style={{ height: "3.3vh", width: "4vh", marginRight: ".8vh" }}
+              style={{ height: "3.3svh", width: "4svh", marginRight: ".8svh" }}
             />
             <div
               style={{
                 display: "flex",
                 flexWrap: "wrap",
                 alignItems: "flex-end",
-                maxWidth: "20vh",
+                maxWidth: "20svh",
                 width: "45vw",
               }}
             >
               <div
                 style={{
-                  fontSize: "2vh",
+                  fontSize: "2svh",
                   fontWeight: 700,
-                  marginRight: ".5vh",
+                  marginRight: ".5svh",
                 }}
               >
                 {songs[currentSong].title}{" "}
               </div>
               <div
                 style={{
-                  fontSize: "1.6vh",
+                  fontSize: "1.6svh",
                   fontWeight: 400,
                   // transform: "translateY(-1px)",
                   marginTop: 2,
@@ -1364,14 +1364,14 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             <Image
               src={Disk}
               alt="Disk"
-              style={{ height: "4.8vh", width: "4.8vh" }}
+              style={{ height: "4.8svh", width: "4.8svh" }}
             />
-            <div style={{ marginLeft: "1.4vh", textAlign: "left" }}>
-              <span style={{ fontSize: "2.7vh", fontWeight: 700 }}>
+            <div style={{ marginLeft: "1.4svh", textAlign: "left" }}>
+              <span style={{ fontSize: "2.7svh", fontWeight: 700 }}>
                 {songs[currentSong].title}
               </span>
               <br />
-              <span className="font black" style={{ fontSize: "2vh" }}>
+              <span className="font black" style={{ fontSize: "2svh" }}>
                 Bimo Arsa
               </span>
             </div>
