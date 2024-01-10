@@ -11,7 +11,7 @@ $rhap_font-family: "Raleway", sans-serif;
   line-height: 1;
   font-family: $rhap_font-family;
   width: 100%;
-  padding: 10px 15px;
+  padding: 1.5svh 2svh;
   background-color: $rhap_background-color;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -28,11 +28,11 @@ $rhap_font-family: "Raleway", sans-serif;
 }
 
 .rhap_header {
-  margin-bottom: 10px;
+  margin-bottom: 1.5svh;
 }
 
 .rhap_footer {
-  margin-top: 5px;
+  margin-top: 1svh;
 }
 
 .rhap_main {
@@ -43,7 +43,7 @@ $rhap_font-family: "Raleway", sans-serif;
 
 .rhap_stacked {
   .rhap_controls-section {
-    margin-top: 8px;
+    margin-top: 1.5svh;
   }
 }
 
@@ -51,7 +51,7 @@ $rhap_font-family: "Raleway", sans-serif;
   flex-direction: row;
 
   .rhap_controls-section {
-    margin-left: 8px;
+    margin-left: 1svh;
   }
 }
 
@@ -59,7 +59,7 @@ $rhap_font-family: "Raleway", sans-serif;
   flex-direction: row-reverse;
 
   .rhap_controls-section {
-    margin-right: 8px;
+    margin-right: 1svh;
   }
 }
 
@@ -67,7 +67,7 @@ $rhap_font-family: "Raleway", sans-serif;
   flex-direction: column-reverse;
 
   .rhap_controls-section {
-    margin-bottom: 8px;
+    margin-bottom: 1svh;
   }
 }
 
@@ -95,9 +95,10 @@ $rhap_font-family: "Raleway", sans-serif;
 
 .rhap_time {
   color: $rhap_time-color;
-  font-size: 16px;
+  font-size: 2.3svh;
   user-select: none;
   -webkit-user-select: none;
+  width: 5.5svh;
 }
 
 .rhap_progress-bar {
@@ -105,9 +106,9 @@ $rhap_font-family: "Raleway", sans-serif;
   position: relative;
   z-index: 0;
   width: 100%;
-  height: 5px;
+  height: 1svh;
   background-color: $rhap_bar-color;
-  border-radius: 2px;
+  border-radius: .2svh;
 }
 
 .rhap_progress-filled {
@@ -115,7 +116,7 @@ $rhap_font-family: "Raleway", sans-serif;
   position: absolute;
   z-index: 2;
   background-color: $rhap_theme-color;
-  border-radius: 2px;
+  border-radius: .2svh;
 }
 
 .rhap_progress-bar-show-download {
@@ -127,19 +128,19 @@ $rhap_font-family: "Raleway", sans-serif;
   position: absolute;
   z-index: 1;
   background-color: $rhap_bar-color;
-  border-radius: 2px;
+  border-radius: 5svh;
 }
 
 .rhap_progress-indicator {
   box-sizing: border-box;
   position: absolute;
   z-index: 3;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  top: -8px;
+  width: 2svh;
+  height: 2svh;
+  // margin-left: -1.25svh;
+  top: -.5svh;
   background: $rhap_theme-color;
-  border-radius: 50px;
+  border-radius: 5svh;
   box-shadow: rgba($rhap_theme-color, 0.5) 0 0 5px;
 }
 
@@ -170,28 +171,28 @@ $rhap_font-family: "Raleway", sans-serif;
 }
 
 .rhap_main-controls-button {
-  margin: 0 3px;
+  margin: 0 .2vh;
   color: $rhap_theme-color;
-  font-size: 35px;
-  width: 35px;
-  height: 35px;
+  font-size: 4.4svh;
+  width: 4.4svh;
+  height: 4.4svh;
 }
 
 .rhap_play-pause-button {
-  font-size: 40px;
-  width: 40px;
-  height: 40px;
+  font-size: 4.5svh;
+  width: 4.5svh;
+  height: 4.5svh;
 }
 
 .rhap_volume-controls {
   display: flex;
-  width: 100px;
-  max-width: 10vw;
+  width: 12svh;
+  max-width: 10svw;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 8px;
+  margin-right: 1svh;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px) {
   .rhap_volume-controls {
     display: none;
   }
@@ -207,24 +208,24 @@ $rhap_font-family: "Raleway", sans-serif;
 
 @media only screen and (max-width: 320px) {
   .rhap_main-controls {
-    transform: scale(0.8);
-    transform-origin: center left;
+    transform: scale(0.9);
+    transform-origin: center right;
   }
 }
 
 .rhap_volume-button {
-  flex: 0 0 26px;
-  font-size: 26px;
-  width: 26px;
-  height: 26px;
+  flex: 0 0 3.5svh;
+  font-size: 3.5svh;
+  width: 3.5svh;
+  height: 3.5svh;
   color: $rhap_theme-color;
-  margin-right: 6px;
+  margin-right: .8svh;
 }
 
 .rhap_volume-container {
   display: flex;
   align-items: center;
-  flex: 0 1 100px;
+  flex: 0 1 12svh;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -233,7 +234,7 @@ $rhap_font-family: "Raleway", sans-serif;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 14px;
+  height: 2svh;
   cursor: pointer;
 
   &:focus:not(:focus-visible) {
@@ -245,23 +246,23 @@ $rhap_font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  height: 4px;
+  height: .5svh;
   background: $rhap_bar-color;
-  border-radius: 2px;
+  border-radius: .2svh;
 }
 
 .rhap_volume-indicator {
   box-sizing: border-box;
   position: absolute;
-  width: 12px;
-  height: 12px;
-  margin-left: -6px;
+  width: 1.5svh;
+  height: 1.5svh;
+  margin-left: -.7svh;
   left: 0;
-  top: -4px;
+  top: -.5svh;
   background: $rhap_theme-color;
   opacity: 0.9;
-  border-radius: 50px;
-  box-shadow: rgba($rhap_theme-color, 0.5) 0 0 3px;
+  border-radius: 6svh;
+  box-shadow: rgba($rhap_theme-color, 0.5) 0 0 .2svh;
   cursor: pointer;
 
   &:hover {
@@ -274,7 +275,7 @@ $rhap_font-family: "Raleway", sans-serif;
   position: absolute;
   z-index: 2;
   background-color: $rhap_theme-color;
-  border-radius: 2px;
+  border-radius: .2svh;
 }
 
 /* Utils */
