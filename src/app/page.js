@@ -303,7 +303,7 @@ export default function Home() {
               // maxWidth: smUp ? "34.4svh" : "27.6svh",
               width: mdUp ? "34.4svh" : "27.6svh",
               // position: "absolute",
-              transform: mdUp ? "translateY(-21svh)" : "translateY(-17svh)",
+              transform: mdUp ? "translateY(-21svh)" : "translateY(-15svh)",
               left: 0,
               right: 0,
               marginLeft: "auto",
@@ -412,7 +412,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             />
           </svg>
         </div>
-        <div className="w-screen px-2 md:px-16 py-[1svh] md:py-[4svh] border-b-[35svh] md:border-b-[10svh] border-b-[#404041] h-[20svh] md:h-[22svh] bg-[#404041] flex flex-col md:flex-row text-white justify-between items-center">
+        <div className="w-screen px-2 md:px-16 py-[1svh] md:py-[4svh] border-b-[32svh] md:border-b-[10svh] border-b-[#404041] h-[20svh] md:h-[22svh] bg-[#404041] flex flex-col md:flex-row text-white justify-between items-center">
           <div className="hidden md:flex text-[3] text-[2svh] md:text-[2.5svh]">
             Once upon a time, there was a boy who fell in love
             <br />
