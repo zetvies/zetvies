@@ -1332,7 +1332,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             >
               <div
                 style={{
-                  fontSize: "2svh",
+                  fontSize: "2.2svh",
                   fontWeight: 700,
                   marginRight: ".5svh",
                 }}
