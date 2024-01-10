@@ -466,7 +466,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           isLoaded && openSection === 1 ? "flex" : "hidden"
-        } absolute top-0 left-0 z-[1000] snap-always snap-start w-full h-[100svh] flex flex-col justify-end md:justify-center pb-[15svh] md:pb-0 items-center overflow-hidden bg-[#c7d783]`}
+        } absolute top-0 left-0 z-[1000] snap-always snap-start w-full h-[100svh] flex flex-col justify-end md:justify-center pb-[20svh] md:pb-0 items-center overflow-hidden bg-[#c7d783]`}
       >
         <button
           className="absolute md:h-[6svh] md:w-[6svh] md:top-[5svh] md:right-[5svh]h-[4.4svh] w-[4.4svh] top-[4svh] right-[4svh] cursor-pointer z-[100000]"
