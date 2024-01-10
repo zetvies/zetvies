@@ -446,7 +446,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div className="flex">
             <button
               onClick={() => setOpenSection(1)}
-              className="bg-[#afc150] hover:bg-[#9fb140] text-[2svh] md:text-[2.5svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh]  font-bold"
+              className="bg-[#afc150] hover:bg-[#9fb140] text-[2svh] md:text-[2.5svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[1.2svh]  font-bold"
             >
               About Me
             </button>
