@@ -1332,7 +1332,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             >
               <div
                 style={{
-                  fontSize: "2.2svh",
+                  fontSize: "2svh",
                   fontWeight: 700,
                   marginRight: ".5svh",
                 }}
@@ -1367,11 +1367,11 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               style={{ height: "4.8svh", width: "4.8svh" }}
             />
             <div style={{ marginLeft: "1.4svh", textAlign: "left" }}>
-              <span style={{ fontSize: "2.7svh", fontWeight: 700 }}>
+              <span style={{ fontSize: "2.4svh", fontWeight: 700 }}>
                 {songs[currentSong].title}
               </span>
               <br />
-              <span className="font black" style={{ fontSize: "2svh" }}>
+              <span className="font black" style={{ fontSize: "1.8svh" }}>
                 Bimo Arsa
               </span>
             </div>
