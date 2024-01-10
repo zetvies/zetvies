@@ -177,10 +177,10 @@ export default function Home() {
       {
         smUp
           ? instagram.html(
-              `<button style="background-color:black;color:white;height:16svh;width:16svh;transform:translate(-8svh,-8svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:13svh;"/></button>`
+              `<button style="background-color:black;color:white;height:16vh;width:16vh;transform:translate(-8vh,-8vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:13vh;"/></button>`
             )
           : instagram.html(
-              `<button style="background-color:black;color:white;height:12svh;width:12svh;transform:translate(-6svh,-6svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:10svh;"/></button>`
+              `<button style="background-color:black;color:white;height:12vh;width:12vh;transform:translate(-6vh,-6vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Instagram.png" style="height:10vh;"/></button>`
             );
       }
       instagram.style("z-index:10");
@@ -188,10 +188,10 @@ export default function Home() {
       {
         smUp
           ? medium.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:9svh;width:9svh;transform:translate(-4.5svh,-4.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:7svh;"/></button>`
+              `<button style="overflow:hidden; background-color:black;color:white;height:9vh;width:9vh;transform:translate(-4.5vh,-4.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:7vh;"/></button>`
             )
           : medium.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:7svh;width:7svh;transform:translate(-3.5svh,-3.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:5svh;"/></button>`
+              `<button style="overflow:hidden; background-color:black;color:white;height:7vh;width:7vh;transform:translate(-3.5vh,-3.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Medium.png" style="height:5vh;"/></button>`
             );
       }
       medium.style("z-index:10");
@@ -199,10 +199,10 @@ export default function Home() {
       {
         smUp
           ? linkedin.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:11svh;width:11svh;transform:translate(-5,5svh,-5,5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:8svh;"/></button>`
+              `<button style="overflow:hidden; background-color:black;color:white;height:11vh;width:11vh;transform:translate(-5,5vh,-5,5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:8vh;"/></button>`
             )
           : linkedin.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:9svh;width:9svh;transform:translate(-4svh,-4svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:6svh;"/></button>`
+              `<button style="overflow:hidden; background-color:black;color:white;height:9vh;width:9vh;transform:translate(-4vh,-4vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:6vh;"/></button>`
             );
       }
       linkedin.style("z-index:10");
@@ -210,10 +210,10 @@ export default function Home() {
       {
         smUp
           ? email.html(
-              `<button style="background-color:white;border:2px solid black;color:black;height:15svh;width:15svh;transform:translate(-8svh,-8svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:10.5svh;"/></button>`
+              `<button style="background-color:white;border:2px solid black;color:black;height:15vh;width:15vh;transform:translate(-8vh,-8vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:10.5vh;"/></button>`
             )
           : email.html(
-              `<button style="background-color:white;border:2px solid black;color:black;height:12svh;width:11svh;transform:translate(-5.5svh,-5.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:7svh;"/></button>`
+              `<button style="background-color:white;border:2px solid black;color:black;height:12vh;width:11vh;transform:translate(-5.5vh,-5.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Email.png" style="height:7vh;"/></button>`
             );
       }
       email.style("z-index:11");
@@ -221,10 +221,10 @@ export default function Home() {
       {
         smUp
           ? whatsapp.html(
-              `<button style="background-color:white;border:2px solid black;color:black;height:11svh;width:11svh;transform:translate(-5.5svh,-5.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:5.5svh;"/></button>`
+              `<button style="background-color:white;border:2px solid black;color:black;height:11vh;width:11vh;transform:translate(-5.5vh,-5.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:5.5vh;"/></button>`
             )
           : whatsapp.html(
-              `<button style="background-color:white;border:2px solid black;color:black;height:9svh;width:9svh;transform:translate(-4.5svh,-4.5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:4.5svh;"/></button>`
+              `<button style="background-color:white;border:2px solid black;color:black;height:9vh;width:9vh;transform:translate(-4.5vh,-4.5vh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:18px"><img src="/Whatsapp.png" style="height:4.5vh;"/></button>`
             );
       }
       whatsapp.style("z-index:10");
@@ -274,7 +274,7 @@ export default function Home() {
           <Lottie
             animationData={LoadingAnimation}
             lottieRef={lottieRef}
-            style={{ height: mdUp ? "100svh" : "80svh", maxWidth: "90vw" }}
+            style={{ height: mdUp ? "100vh" : "80vh", maxWidth: "90vw" }}
             loop={false}
             onComplete={() => {
               if (!isLoaded) {
@@ -446,7 +446,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           isLoaded && openSection === 1 ? "flex" : "hidden"
-        } absolute top-0 left-0 z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-end md:justify-center pb-[15vh] md:pb-0 items-center overflow-hidden bg-[#c7d783]`}
+        } absolute top-0 left-0 z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-end md:justify-center pb-[25vh] md:pb-0 items-center overflow-hidden bg-[#c7d783]`}
       >
         <button
           className="absolute md:h-[6vh] md:w-[6vh] md:top-[5vh] md:right-[5vh]h-[4.4vh] w-[4.4vh] top-[4vh] right-[4vh] cursor-pointer z-[100000]"
@@ -495,7 +495,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           isLoaded && openSection === 2 ? "visible" : "invisible"
-        } flex absolute top-0 left-0  z-[1000] snap-always snap-start w-full h-screen flex flex-col justify-center items-center overflow-hidden bg-[#1fb9bb]`}
+        } flex absolute top-0 left-0  z-[1000] snap-always snap-start w-full h-screen flex-col justify-center items-center overflow-hidden bg-[#1fb9bb]`}
       >
         <button
           className="absolute md:h-[6vh] md:w-[6vh] md:top-[5vh] md:right-[5vh]  fill-white h-[4.4vh] w-[4.4vh] top-[4vh] right-[4vh] cursor-pointer z-[100000]"
@@ -539,7 +539,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
         <div
           ref={portfolioRef}
           id={"portfolio"}
-          className="flex mt-[3vh] w-[100vw] overflow-x-scroll pl-[15%] pr-[5%] md:pr-[8%] scroll-smooth pb-[4vh] "
+          className="flex mt-[3vh] w-[100vw] overflow-x-scroll pl-[15%] pr-[5%] md:pr-[8%] scroll-smooth pb-[4vh] mb-[4vh]"
         >
           <div className=" rotate-[-90deg] h-[10vh] md:h-[15vh] w-0 translate-y-[36vh] md:translate-y-[39vh] text-white text-bold text-[2.7vh] md:text-[3.3vh]">
             Product<span className="text-[#1fb9bb]">o</span>Development
@@ -1316,29 +1316,29 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             <Image
               src={Disk}
               alt="Disk"
-              style={{ height: "3.3svh", width: "4svh", marginRight: ".8svh" }}
+              style={{ height: "3.3vh", width: "4vh", marginRight: ".8vh" }}
             />
             <div
               style={{
                 display: "flex",
                 flexWrap: "wrap",
                 alignItems: "flex-end",
-                maxWidth: "20svh",
+                maxWidth: "20vh",
                 width: "45vw",
               }}
             >
               <div
                 style={{
-                  fontSize: "2.2svh",
+                  fontSize: "2.2vh",
                   fontWeight: 700,
-                  marginRight: ".5svh",
+                  marginRight: ".5vh",
                 }}
               >
                 {songs[currentSong].title}{" "}
               </div>
               <div
                 style={{
-                  fontSize: "1.7svh",
+                  fontSize: "1.7vh",
                   fontWeight: 400,
                   transform: "translateY(-1px)",
                   marginTop: 2,
@@ -1361,14 +1361,14 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             <Image
               src={Disk}
               alt="Disk"
-              style={{ height: "4.8svh", width: "4.8svh" }}
+              style={{ height: "4.8vh", width: "4.8vh" }}
             />
-            <div style={{ marginLeft: "1.4svh", textAlign: "left" }}>
-              <span style={{ fontSize: "2.7svh", fontWeight: 700 }}>
+            <div style={{ marginLeft: "1.4vh", textAlign: "left" }}>
+              <span style={{ fontSize: "2.7vh", fontWeight: 700 }}>
                 {songs[currentSong].title}
               </span>
               <br />
-              <span className="font black" style={{ fontSize: "2svh" }}>
+              <span className="font black" style={{ fontSize: "2vh" }}>
                 Bimo Arsa
               </span>
             </div>
