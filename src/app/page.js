@@ -303,7 +303,7 @@ export default function Home() {
               // maxWidth: smUp ? "34.4vh" : "27.6vh",
               width: mdUp ? "34.4vh" : "27.6vh",
               // position: "absolute",
-              transform: mdUp ? "translateY(-21vh)" : "translateY(-15vh)",
+              transform: mdUp ? "translateY(-21vh)" : "translateY(-17vh)",
               left: 0,
               right: 0,
               marginLeft: "auto",
