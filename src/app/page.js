@@ -265,7 +265,7 @@ export default function Home() {
   return (
     <main
       ref={mainRef}
-      className={`snap-y snap-mandatory scroll-smooth h-[100ssvh] w-screen ${
+      className={`snap-y snap-mandatory scroll-smooth h-[100svh] w-screen ${
         isLoaded ? "overflow-scroll" : "overflow-hidden"
       } overflow-x-hidden bg-[#bfd6e8]`}
     >
@@ -449,7 +449,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           isLoaded && openSection === 1 ? "flex" : "hidden"
-        } absolute top-0 left-0 z-[1000] snap-always snap-start w-full h-[100ssvh] flex flex-col justify-end md:justify-center pb-[25svh] md:pb-0 items-center overflow-hidden bg-[#c7d783]`}
+        } absolute top-0 left-0 z-[1000] snap-always snap-start w-full h-[100svh] flex flex-col justify-end md:justify-center pb-[25svh] md:pb-0 items-center overflow-hidden bg-[#c7d783]`}
       >
         <button
           className="absolute md:h-[6svh] md:w-[6svh] md:top-[5svh] md:right-[5svh]h-[4.4svh] w-[4.4svh] top-[4svh] right-[4svh] cursor-pointer z-[100000]"
@@ -465,7 +465,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
           </svg>
         </button>
-        <div className=" w-full h-[80svh] md:h-[100ssvh] flex flex-col justify-center items-center overflow-hidden absolute top-0 left-0">
+        <div className=" w-full h-[80svh] md:h-[100svh] flex flex-col justify-center items-center overflow-hidden absolute top-0 left-0">
           <NextReactP5Wrapper sketch={sketch} />
         </div>
         <div className="flex flex-col items-center justify-center w-screen">
@@ -498,7 +498,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           isLoaded && openSection === 2 ? "visible" : "invisible"
-        } flex absolute top-0 left-0  z-[1000] snap-always snap-start w-full h-[100ssvh] flex-col justify-center items-center overflow-hidden bg-[#1fb9bb]`}
+        } flex absolute top-0 left-0  z-[1000] snap-always snap-start w-full h-[100svh] flex-col justify-center items-center overflow-hidden bg-[#1fb9bb]`}
       >
         <button
           className="absolute md:h-[6svh] md:w-[6svh] md:top-[5svh] md:right-[5svh]  fill-white h-[4.4svh] w-[4.4svh] top-[4svh] right-[4svh] cursor-pointer z-[100000]"
@@ -805,16 +805,16 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
       <div
         className={` ${
           openModal === 0 ? "hidden" : ""
-        } absolute top-0 left-0 h-[100ssvh] w-screen`}
+        } absolute top-0 left-0 h-[100svh] w-screen`}
       >
         <div
-          className=" absolute h-[100ssvh] w-screen bg-[rgb(0,0,0,0.5)] top-0 left-0 z-[10000] cursor-pointer"
+          className=" absolute h-[100svh] w-screen bg-[rgb(0,0,0,0.5)] top-0 left-0 z-[10000] cursor-pointer"
           onClick={() => setOpenModal(0)}
         ></div>
         <div
           className={`absolute bottom-0 md:right-0 w-[100vw] md:w-[80svh] md:max-w-[85vw] ${
             modalContents[openModal - 1]?.color
-          } h-[80svh] md:h-[100ssvh] rounded-t-[5svh] md:rounded-l-[5svh] md:rounded-tr-none z-[10010] overflow-hidden`}
+          } h-[80svh] md:h-[100svh] rounded-t-[5svh] md:rounded-l-[5svh] md:rounded-tr-none z-[10010] overflow-hidden`}
         >
           <div
             className={`${
@@ -1220,7 +1220,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 4 ? "md:flex" : ""
-            } hidden flex-col bg-[#04041c] rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
+            } hidden flex-col bg-[#04041c] rounded-[3svh] overflow-hidden h-[100svh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#04041c] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[45%] absolute bottom-0">
@@ -1231,7 +1231,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 5 ? "md:flex" : ""
-            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
+            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100svh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#85b9c2] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[45%] absolute bottom-0">
@@ -1242,7 +1242,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 6 ? "md:flex" : ""
-            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
+            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100svh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#b42f2e] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[55%] absolute bottom-0">
@@ -1261,7 +1261,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 8 ? "md:flex" : ""
-            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
+            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100svh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#84765b] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[55%] absolute bottom-0">
@@ -1271,7 +1271,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div
             className={` ${
               openModal === 9 ? "md:flex" : ""
-            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100ssvh] w-[100%] cursor-pointer relative `}
+            } hidden flex-col  rounded-[3svh] overflow-hidden h-[100svh] w-[100%] cursor-pointer relative `}
           >
             <div className="text-gray-100 p-4 bg-gradient-to-b from-[#8cb1cc] from-65% to-transparent  h-[85%] w-[100%] absolute top-0 z-20"></div>
             <div className=" w-[100%] h-[55%] absolute bottom-0">
