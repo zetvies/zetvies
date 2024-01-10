@@ -50,7 +50,7 @@ export default function Home() {
   let [Cat, setCat] = useState();
   let [Untuk, setUntuk] = useState();
   let [openModal, setOpenModal] = useState(0);
-  let [openSection, setOpenSection] = useState(2);
+  let [openSection, setOpenSection] = useState(0);
 
   let modalContents = [
     {
@@ -115,7 +115,7 @@ export default function Home() {
   ];
   let [currentSong, setCurrentSong] = useState(0);
 
-  let [isLoaded, setIsLoaded] = useState(true);
+  let [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     let scrollHandler = (event) => {
@@ -292,18 +292,18 @@ export default function Home() {
       <div
         className={` ${
           isLoaded ? "flex" : "hidden"
-        } snap-always snap-start w-full h-[100svh] flex-col justify-end`}
+        } snap-always snap-start w-full h-[100vh] flex-col justify-end`}
       >
         <div className="flex flex-1 relative">
           <Image
             alt="tower"
             src={Tower}
             style={{
-              height: mdUp ? "42.9svh" : "34.2svh",
-              // maxWidth: smUp ? "34.4svh" : "27.6svh",
-              width: mdUp ? "34.4svh" : "27.6svh",
+              height: mdUp ? "42.9vh" : "34.2vh",
+              // maxWidth: smUp ? "34.4vh" : "27.6vh",
+              width: mdUp ? "34.4vh" : "27.6vh",
               // position: "absolute",
-              transform: mdUp ? "translateY(-21svh)" : "translateY(-15svh)",
+              transform: mdUp ? "translateY(-21vh)" : "translateY(-15vh)",
               left: 0,
               right: 0,
               marginLeft: "auto",
@@ -316,20 +316,20 @@ export default function Home() {
             src={Rabbit}
             style={{
               display: "block",
-              height: mdUp ? "65svh" : "49svh",
-              width: mdUp ? "80svh" : "40svh",
+              height: mdUp ? "65vh" : "49vh",
+              width: mdUp ? "80vh" : "40vh",
               transform: smMd
-                ? "translateX(23svh)"
+                ? "translateX(23vh)"
                 : mdUp
-                ? "translateX(32svh)"
-                : "translateX(12svh)translateY(3svh)",
+                ? "translateX(32vh)"
+                : "translateX(12vh)translateY(3vh)",
               position: "absolute",
               bottom: 0,
               left: 0,
               right: 0,
               marginLeft: "auto",
               marginRight: "auto",
-              // bottom: smUp ? "-80.4svh" : "-60.1svh",
+              // bottom: smUp ? "-80.4vh" : "-60.1vh",
               zIndex: 1,
             }}
           />
@@ -338,13 +338,13 @@ export default function Home() {
             src={Turtle}
             style={{
               display: "block",
-              height: mdUp ? "25svh" : "65svh",
-              width: mdUp ? "33svh" : "21svh",
+              height: mdUp ? "25vh" : "65vh",
+              width: mdUp ? "33vh" : "21vh",
               transform: smMd
-                ? "translateX(-20svh)translateY(-1svh)"
+                ? "translateX(-20vh)translateY(-1vh)"
                 : mdUp
-                ? "translateX(-30svh)translateY(-32svh)"
-                : "translateX(-12svh)translateY(-1svh)",
+                ? "translateX(-30vh)translateY(-32vh)"
+                : "translateX(-12vh)translateY(-1vh)",
               position: "absolute",
               bottom: 0,
               left: 0,
@@ -357,11 +357,11 @@ export default function Home() {
           <svg
             style={{
               display: "block",
-              height: mdUp ? "7.5svh" : "5.6svh",
+              height: mdUp ? "7.5vh" : "5.6vh",
               width: "100%",
               // transform: "translateX(-2px)",
               position: "absolute",
-              bottom: mdUp ? "59.8svh" : "49.8svh",
+              bottom: mdUp ? "59.8vh" : "49.8vh",
               left: 0,
               right: 0,
               marginLeft: "auto",
@@ -383,12 +383,12 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             preserveAspectRatio="none"
             style={{
               display: "block",
-              height: mdUp ? "60svh" : "50svh",
-              width: mdUp ? "223svh" : "170svh",
+              height: mdUp ? "60vh" : "50vh",
+              width: mdUp ? "223vh" : "170vh",
               position: "absolute",
               bottom: 0,
               left: "50%",
-              transform: "translateX(calc(-50% + .5svh))translateY(2px)",
+              transform: "translateX(calc(-50% + .5vh))translateY(2px)",
               marginLeft: "auto",
               marginRight: "auto",
               // zIndex: 1,
@@ -412,13 +412,13 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             />
           </svg>
         </div>
-        <div className="w-screen px-2 md:px-16 py-[1svh] md:py-[4svh] border-b-[32svh] md:border-b-[10svh] border-b-[#404041] h-[20svh] md:h-[22svh] bg-[#404041] flex flex-col md:flex-row text-white justify-between items-center">
-          <div className="hidden md:flex text-[3] text-[2svh] md:text-[2.5svh]">
+        <div className="w-screen px-2 md:px-16 py-[1vh] md:py-[4vh] border-b-[32vh] md:border-b-[10vh] border-b-[#404041] h-[20vh] md:h-[22vh] bg-[#404041] flex flex-col md:flex-row text-white justify-between items-center">
+          <div className="hidden md:flex text-[3] text-[2vh] md:text-[2.5vh]">
             Once upon a time, there was a boy who fell in love
             <br />
             with a girl whose tears tasted like moon dust.
           </div>
-          <div className="flex md:hidden text-[2.2svh] text-center mb-4">
+          <div className="flex md:hidden text-[2.2vh] text-center mb-4">
             Once upon a time, there was a
             <br />
             boy who fell in love with a girl
@@ -429,13 +429,13 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
           <div className="flex">
             <button
               onClick={() => setOpenSection(1)}
-              className="bg-[#afc150] hover:bg-[#9fb140] text-[2svh] md:text-[2.5svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh]  font-bold"
+              className="bg-[#afc150] hover:bg-[#9fb140] text-[2vh] md:text-[2.5vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded  mr-[.8vh]  font-bold"
             >
               About Me
             </button>
             <button
               onClick={() => setOpenSection(2)}
-              className="bg-[#00a0a2] hover:bg-[#0095a2] text-[2svh] md:text-[2.5svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded font-bold"
+              className="bg-[#00a0a2] hover:bg-[#0095a2] text-[2vh] md:text-[2.5vh] text-white py-[1vh] px-[2vh] md:px-[3vh] w-fit rounded font-bold"
             >
               Projects
             </button>
