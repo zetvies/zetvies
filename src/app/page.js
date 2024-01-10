@@ -412,7 +412,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             />
           </svg>
         </div>
-        <div className="w-screen px-2 md:px-16 py-[1vh] md:py-[4vh] border-b-[32vh] md:border-b-[10vh] border-b-[#404041] h-[20vh] md:h-[22vh] bg-[#404041] flex flex-col md:flex-row text-white justify-between items-center">
+        <div className="w-screen px-2 md:px-16 py-[1vh] md:py-[4vh] border-b-[35vh] md:border-b-[10vh] border-b-[#404041] h-[20vh] md:h-[22vh] bg-[#404041] flex flex-col md:flex-row text-white justify-between items-center">
           <div className="hidden md:flex text-[3] text-[2vh] md:text-[2.5vh]">
             Once upon a time, there was a boy who fell in love
             <br />
