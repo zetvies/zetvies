@@ -181,7 +181,7 @@ export default function Home() {
       "_blank"
     );
     let medium = p5.createA("https://medium.com/@zetvies", "", "_blank");
-    let linkedin = p5.createA("https://linkedin.com/in/zetvies", "", "_blank");
+    // let linkedin = p5.createA("https://linkedin.com/in/zetvies", "", "_blank");
 
     p5.setup = () => {
       p5.createCanvas(
@@ -213,16 +213,16 @@ export default function Home() {
       }
       medium.style("z-index:10");
 
-      {
-        smUp
-          ? linkedin.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:11svh;width:11svh;transform:translate(-5,5svh,-5,5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:8svh;"/></button>`
-            )
-          : linkedin.html(
-              `<button style="overflow:hidden; background-color:black;color:white;height:9svh;width:9svh;transform:translate(-4svh,-4svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:6svh;"/></button>`
-            );
-      }
-      linkedin.style("z-index:10");
+      // {
+      //   smUp
+      //     ? linkedin.html(
+      //         `<button style="overflow:hidden; background-color:black;color:white;height:11svh;width:11svh;transform:translate(-5,5svh,-5,5svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:8svh;"/></button>`
+      //       )
+      //     : linkedin.html(
+      //         `<button style="overflow:hidden; background-color:black;color:white;height:9svh;width:9svh;transform:translate(-4svh,-4svh);border-radius:50%;padding:5%;text-align:center;line-height:36px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:36px"><img src="/Linkedin.jpg" style="height:6svh;"/></button>`
+      //       );
+      // }
+      // linkedin.style("z-index:10");
 
       {
         smUp
@@ -262,12 +262,12 @@ export default function Home() {
 
       xoff1 += 0.003;
       xoff2 += 0.003;
-      xoff3 += 0.005;
-      xoff4 += 0.005;
-      xoff5 += 0.0075;
-      xoff6 += 0.0075;
-      xoff7 += 0.0075;
-      xoff8 += 0.0075;
+      xoff3 += 0.0045;
+      xoff4 += 0.0045;
+      xoff5 += 0.006;
+      xoff6 += 0.006;
+      xoff7 += 0.006;
+      xoff8 += 0.006;
       xoff9 += 0.005;
       xoff10 += 0.005;
 
@@ -276,7 +276,7 @@ export default function Home() {
       email.position(x2, y2);
       whatsapp.position(x3, y3);
       medium.position(x4, y4);
-      linkedin.position(x5, y5);
+      // linkedin.position(x5, y5);
     };
   };
   return (
