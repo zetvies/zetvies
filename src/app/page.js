@@ -91,12 +91,12 @@ export default function Home() {
       const tentangKamu = await import(`@/assets/songs/Tentang-Kamu.mp3`);
       const satuTahun = await import(`@/assets/songs/Satu-Tahun.mp3`);
       const reKita = await import(`@/assets/songs/Re-Kita.mp3`);
-      
-      setJalanSurabaya(jalanSurabaya.default)
-      setKita(kita.default)
-      setTentangKamu(tentangKamu.default)
-      setSatuTahun(satuTahun.default)
-      setReKita(reKita.default)
+
+      setJalanSurabaya(jalanSurabaya.default);
+      setKita(kita.default);
+      setTentangKamu(tentangKamu.default);
+      setSatuTahun(satuTahun.default);
+      setReKita(reKita.default);
 
       audioPlayerRef.current.audio.current.pause();
     }
@@ -132,7 +132,7 @@ export default function Home() {
   ];
   let [currentSong, setCurrentSong] = useState(0);
 
-  let [isLoaded, setIsLoaded] = useState(false);
+  let [isLoaded, setIsLoaded] = useState(true);
 
   useEffect(() => {
     let scrollHandler = (event) => {
@@ -577,14 +577,14 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
                 <br />
                 Social Game Database
               </span>
-              <div className="flex flex-wrap mt-[1.6svh]">
-                <div className="bg-[#bd3229] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
+              <div className="flex flex-wrap mt-[1svh]">
+                <div className="bg-[#bd3229] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                   Product Manager
                 </div>
-                <div className="bg-[#4275db] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
+                <div className="bg-[#4275db] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                   Creative Director
                 </div>
-                <div className="bg-[#e4bf4b] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mt-[.8svh] ">
+                <div className="bg-[#e4bf4b] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mt-[.8svh]">
                   Front End Developer
                 </div>
               </div>
@@ -606,11 +606,11 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
                 <br />
                 School Digitalization
               </span>
-              <div className="flex flex-wrap mt-[1.8svh]">
-                <div className="bg-[#F96756] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
+              <div className="flex flex-wrap mt-[1svh]">
+                <div className="bg-[#F96756] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                   Product Manager
                 </div>
-                <div className="bg-[#7F41CE] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
+                <div className="bg-[#7F41CE] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                   Creative Director
                 </div>
                 <div className="bg-[#00AC96] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh] ">
@@ -638,11 +638,11 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
                 <br />
                 Digital Greeting Card
               </span>
-              <div className="flex flex-wrap mt-[1.8svh]">
-                <div className="bg-[#5977f1] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
+              <div className="flex flex-wrap mt-[1svh]">
+                <div className="bg-[#5977f1] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                   Product Manager
                 </div>
-                <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
+                <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                   Creative Director
                 </div>
                 <div className="bg-[#de556a] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh] ">
@@ -744,11 +744,11 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
                 <br />
                 Multiuser Augmented Reality
               </span>
-              <div className="flex flex-wrap mt-[1.8svh]">
-                <div className="bg-[#7f3b44] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
+              <div className="flex flex-wrap mt-[1svh]">
+                <div className="bg-[#7f3b44] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                   Creative Director
                 </div>
-                <div className="bg-[#558f89] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold ">
+                <div className="bg-[#558f89] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mt-[.8svh]">
                   Full Stack Developer
                 </div>
               </div>
@@ -775,11 +775,11 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
                 <br />
                 Music EP
               </span>
-              <div className="flex flex-wrap mt-[1.8svh]">
-                <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
+              <div className="flex flex-wrap mt-[1svh]">
+                <div className="bg-[#4eac5e] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh] mt-[.8svh]">
                   Singer-Songwriter
                 </div>
-                <div className="bg-[#56432c] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
+                <div className="bg-[#56432c] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mt-[.8svh]">
                   Creative Director
                 </div>
               </div>
@@ -996,7 +996,10 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               Arsa was part of the Light Installation team.
             </p>
 
-            <a target="_blank" href="https://www.goethe.de/ins/id/id/ver.cfm?event_id=24974490">
+            <a
+              target="_blank"
+              href="https://www.goethe.de/ins/id/id/ver.cfm?event_id=24974490"
+            >
               <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 View Article
               </button>
@@ -1036,7 +1039,10 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
               cutting-edge technology.
             </p>
 
-            <a target="_blank" href="https://www.youtube.com/watch?v=-K6nfNuImOc">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=-K6nfNuImOc"
+            >
               <button className="bg-[#b5a468] hover:bg-[#a59458] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                 Watch Perfect Liar
               </button>
@@ -1053,7 +1059,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             </b>
 
             <span className="text-[2.2svh] md:text-[2.4svh]">
-              Extended Reality
+              Festival Teater Jakarta
             </span>
             <div className="flex flex-wrap mt-[1.8svh]">
               <div className="bg-[#000000] w-[fit-content] p-[.5svh] px-[1svh] text-[1.6svh] md:text-[1.7svh] rounded font-bold mr-[.8svh]">
@@ -1120,7 +1126,10 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
                   Visit Saling Sulam
                 </button>
               </a>
-              <a target="_blank" href="https://www.instagram.com/p/C16Db_IyiLd/">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/p/C16Db_IyiLd/"
+              >
                 <button className="bg-[#558f89] hover:bg-[#457f79] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[.8svh] md:mt-[1.6svh] font-bold">
                   Visit Ourchetype
                 </button>
@@ -1162,7 +1171,10 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
             </p>
 
             <div className="flex">
-              <a target="_blank" href="https://www.youtube.com/watch?v=hw-1M0Gacn0&pp=ygUNYXJlemEgbmlybWFsYQ%3D%3D">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=hw-1M0Gacn0&pp=ygUNYXJlemEgbmlybWFsYQ%3D%3D"
+              >
                 <button className="bg-[#4eac5e] hover:bg-[#3e9c4e] text-[2svh] md:text-[2.2svh] text-white py-[1svh] px-[2svh] md:px-[3svh] w-fit rounded  mr-[.8svh] mt-[1.6svh] font-bold">
                   Explore Areza Nirmala
                 </button>
