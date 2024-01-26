@@ -132,7 +132,7 @@ export default function Home() {
   ];
   let [currentSong, setCurrentSong] = useState(0);
 
-  let [isLoaded, setIsLoaded] = useState(true);
+  let [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     let scrollHandler = (event) => {
