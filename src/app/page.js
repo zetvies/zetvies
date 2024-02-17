@@ -1319,7 +1319,7 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
         showSkipControls={true}
         showJumpControls={false}
         autoPlay={false}
-        // autoPlayAfterSrcChange={true}
+        autoPlayAfterSrcChange={false}
         defaultCurrentTime="00:00"
         defaultDuration={`0${Math.floor(songs[currentSong].duration / 60)}:${
           songs[currentSong].duration % 60 < 10
