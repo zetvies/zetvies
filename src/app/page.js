@@ -98,7 +98,7 @@ export default function Home() {
       setSatuTahun(satuTahun.default);
       setReKita(reKita.default);
 
-      audioPlayerRef.current.audio.current.pause();
+      // audioPlayerRef.current.audio.current.pause();
     }
     importFile();
   }, []);
@@ -1329,12 +1329,21 @@ c19.5-0.1,39-0.1,58.6-0.2c-0.1-17.8-0.1-35.6-0.2-53.5C57.9,17.4,49.2,5,37.2,1.2z
         customVolumeControls={smUp ? [RHAP_UI.VOLUME] : []}
         onClickPrevious={() => {
           setCurrentSong(currentSong > 0 ? currentSong - 1 : 4);
+          setTimeout(() => {
+            audioPlayerRef.current.audio.current.play();
+          }, 100);
         }}
         onClickNext={() => {
           setCurrentSong(currentSong < 4 ? currentSong + 1 : 0);
+          setTimeout(() => {
+            audioPlayerRef.current.audio.current.play();
+          }, 100);
         }}
         onEnded={() => {
           setCurrentSong(currentSong < 4 ? currentSong + 1 : 0);
+          setTimeout(() => {
+            audioPlayerRef.current.audio.current.play();
+          }, 100);
         }}
         layout={mdUp ? "horizontal" : "stacked-reverse"}
         customAdditionalControls={[
